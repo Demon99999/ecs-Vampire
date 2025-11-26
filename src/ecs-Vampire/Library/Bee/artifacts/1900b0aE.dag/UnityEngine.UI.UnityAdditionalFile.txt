@@ -1,1 +1,1 @@
-C:\Users\Dmitry\Documents\GitHub\Vampire\src\ecs-Vampire
+C:\Users\Dmitry\Documents\GitHub\ecs-Vampire\src\ecs-Vampire
