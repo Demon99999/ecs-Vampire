@@ -1,0 +1,39 @@
+using Code.Gameplay.Features.TargetCollection;
+using Entitas;
+using NotImplementedException = System.NotImplementedException;
+
+namespace Code.Gameplay.Features.Enemy.System
+{
+    public class EnemyDeathSystem : IExecuteSystem
+    {
+        private const float DeathAnimationTime = 2;
+        
+        private IGroup<GameEntity> _enemies;
+
+        public EnemyDeathSystem(GameContext game)
+        {
+            _enemies = game.GetGroup(GameMatcher
+                .AllOf(
+                    GameMatcher.Enemy,
+                    GameMatcher.Dead,
+                    GameMatcher.ProcessingDeath));
+        }
+        
+        public void Execute()
+        {
+            foreach (GameEntity enemy in _enemies)
+            {
+                enemy.isMovementAvailable = false;
+                enemy.isTurnedAlongDirections = false;
+                enemy.RemoveTargetCollectionComponents();
+
+                if (enemy.hasEnemyAnimator)
+                {
+                    enemy.EnemyAnimator.PlayDied();
+                }
+
+                enemy.ReplaceSelfDestructTimer(DeathAnimationTime);
+            }
+        }
+    }
+}
