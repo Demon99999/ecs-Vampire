@@ -17,8 +17,8 @@ namespace Code.Common.Destruct.System
     {
       foreach (GameEntity entity in _entities)
       {
-        //entity.View.ReleaseEntity();
-        //Object.Destroy(entity.View.gameObject);
+        entity.View.ReleaseEntity();
+        Object.Destroy(entity.View.gameObject);
       }
     }
   }

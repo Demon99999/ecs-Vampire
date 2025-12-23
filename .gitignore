@@ -97,3 +97,8 @@ InitTestScene*.unity*
 
 # Auto-generated scenes by play mode tests
 /[Aa]ssets/[Ii]nit[Tt]est[Ss]cene*.unity*
+/src/ecs-Vampire/Library
+/src/ecs-Vampire/Library
+/src/ecs-Vampire/Library
+*.pid
+src/ecs-Vampire/Library/ilpp.pid

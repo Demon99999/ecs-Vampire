@@ -8,7 +8,7 @@ namespace Code.Common.Destruct.System
   {
     private readonly ITimeService _time;
     private readonly IGroup<GameEntity> _entities;
-    private readonly List<GameEntity> _buffer = new List<GameEntity>();
+    private readonly List<GameEntity> _buffer = new List<GameEntity>(64);
 
     public SelfDestructTimerSystem(GameContext game, ITimeService time)
     {

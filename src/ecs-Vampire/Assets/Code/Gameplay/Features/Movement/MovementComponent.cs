@@ -8,4 +8,5 @@ namespace Code.Gameplay.Features.Movement
     [Game] public class Moving : IComponent { }
     [Game] public class MovementAvailable : IComponent { }
     [Game] public class TurnedAlongDirections : IComponent { }
+    [Game] public class RotationAlignedAlongDirection : IComponent { }
 }

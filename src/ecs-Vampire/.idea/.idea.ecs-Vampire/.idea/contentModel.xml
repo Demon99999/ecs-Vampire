@@ -4,20 +4,18 @@
     <e p="C:\Users\Dmitry\AppData\Local\JetBrains\Rider2020.2\extResources" t="IncludeRecursive" />
     <e p="C:\Users\Dmitry\AppData\Local\JetBrains\Rider2020.2\resharper-host\Local\Transient\Rider\v202\SolutionCaches\_ecs-Vampire.-1117394401.00" t="ExcludeRecursive" />
     <e p="C:\Users\Dmitry\Documents\GitHub\ecs-Vampire\src\ecs-Vampire" t="IncludeRecursive">
-      <e p="Assembly-CSharp-Editor-firstpass.csproj" t="IncludeRecursive" />
-      <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp-firstpass.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Code" t="Include">
           <e p="Common" t="Include">
-            <e p="Collisions" t="Include" />
             <e p="CommonComponents.cs" t="Include" />
             <e p="Destruct" t="Include">
               <e p="ProcessDestructedFeature.cs" t="Include" />
               <e p="System" t="Include">
                 <e p="CleanupGameDestructedSystem.cs" t="Include" />
                 <e p="CleanupGameDestructedViewSystem.cs" t="Include" />
+                <e p="CleanupMetaDestructedSystem.cs" t="Include" />
                 <e p="SelfDestructTimerSystem.cs" t="Include" />
               </e>
             </e>
@@ -28,6 +26,9 @@
                 <e p="GameEntity.cs" t="Include" />
                 <e p="INamedEntity.cs" t="Include" />
               </e>
+            </e>
+            <e p="EntityIndices" t="Include">
+              <e p="GameEntityIndices.cs" t="Include" />
             </e>
             <e p="Extensions" t="Include">
               <e p="CollisionExtensions.cs" t="Include" />
@@ -56,6 +57,7 @@
                 <e p="ICollisionRegistry.cs" t="Include" />
               </e>
               <e p="CommonComponets.cs" t="Include" />
+              <e p="GameplayConstants.cs" t="Include" />
               <e p="Physics" t="Include">
                 <e p="IPhysicsService.cs" t="Include" />
                 <e p="PhysicsService.cs" t="Include" />
@@ -74,13 +76,86 @@
               </e>
               <e p="Visuals" t="Include">
                 <e p="IDamageTakenAnimator.cs" t="Include" />
+                <e p="StatusVisuals" t="Include">
+                  <e p="IStatusVisuals.cs" t="Include" />
+                  <e p="StatusVisuals.cs" t="Include" />
+                  <e p="StatusVisualsRegistrar.cs" t="Include" />
+                </e>
               </e>
             </e>
             <e p="Features" t="Include">
-              <e p="Damage" t="Include">
-                <e p="DamageFeature.cs" t="Include" />
+              <e p="Abilities" t="Include">
+                <e p="AbilityComponents.cs" t="Include" />
+                <e p="AbilityFeature.cs" t="Include" />
+                <e p="AbilityId.cs" t="Include" />
+                <e p="Configs" t="Include">
+                  <e p="AbilityConfig.cs" t="Include" />
+                  <e p="AbilityLevel.cs" t="Include" />
+                  <e p="AuraSetup.cs" t="Include" />
+                  <e p="ProjectileSetup.cs" t="Include" />
+                </e>
+                <e p="Factory" t="Include">
+                  <e p="AbilityFactory.cs" t="Include" />
+                  <e p="IAbilityFactory.cs" t="Include" />
+                </e>
                 <e p="System" t="Include">
-                  <e p="AplayDamageTargetSystem.cs" t="Include" />
+                  <e p="VegetableBoltAbilitySystem.cs" t="Include" />
+                </e>
+              </e>
+              <e p="Armaments" t="Include">
+                <e p="ArmamentComponents.cs" t="Include" />
+                <e p="ArmamentFeature.cs" t="Include" />
+                <e p="Factory" t="Include">
+                  <e p="ArmamentFactory.cs" t="Include" />
+                  <e p="IArmamentFactory.cs" t="Include" />
+                </e>
+                <e p="System" t="Include">
+                  <e p="FinalizeProcessedArmamentsSystem.cs" t="Include" />
+                  <e p="MarkProcessedOnTargetLimitExceededSystem.cs" t="Include" />
+                </e>
+              </e>
+              <e p="CharacterStats" t="Include">
+                <e p="Indexing" t="Include">
+                  <e p="StatKey.cs" t="Include" />
+                  <e p="StatKeyEqualityComparer.cs" t="Include" />
+                </e>
+                <e p="Stats.cs" t="Include" />
+                <e p="StatsComponents.cs" t="Include" />
+                <e p="StatsFeature.cs" t="Include" />
+                <e p="System" t="Include">
+                  <e p="ApplySpeedFromStatsSystem.cs" t="Include" />
+                  <e p="StatChangeSystem.cs" t="Include" />
+                </e>
+              </e>
+              <e p="Cooldowns" t="Include">
+                <e p="CooldownComponents.cs" t="Include" />
+                <e p="CooldownEntityExtensions.cs" t="Include" />
+                <e p="System" t="Include">
+                  <e p="CooldownSystem.cs" t="Include" />
+                </e>
+              </e>
+              <e p="EffectApplication" t="Include">
+                <e p="EffectApplicationFeature.cs" t="Include" />
+                <e p="System" t="Include">
+                  <e p="ApplyEffectsOnTargetsSystem.cs" t="Include" />
+                  <e p="ApplyStatusesOnTargetsSystem.cs" t="Include" />
+                  <e p="DamageSystem.cs" t="Include" />
+                </e>
+              </e>
+              <e p="Effects" t="Include">
+                <e p="EffectComponents.cs" t="Include" />
+                <e p="EffectEntityExtensions.cs" t="Include" />
+                <e p="EffectFeature.cs" t="Include" />
+                <e p="EffectSetup.cs" t="Include" />
+                <e p="EffectTypeId.cs" t="Include" />
+                <e p="Factory" t="Include">
+                  <e p="EffectFactory.cs" t="Include" />
+                  <e p="IEffectFactory.cs" t="Include" />
+                </e>
+                <e p="System" t="Include">
+                  <e p="CleanupProcessedEffects.cs" t="Include" />
+                  <e p="ProcessDamageEffectSystem.cs" t="Include" />
+                  <e p="RemoveEffectsWithoutTargetsSystem.cs" t="Include" />
                 </e>
               </e>
               <e p="Enemy" t="Include">
@@ -90,6 +165,10 @@
                 <e p="EnemyComponent.cs" t="Include" />
                 <e p="EnemyFeature.cs" t="Include" />
                 <e p="EnemyTypeId.cs" t="Include" />
+                <e p="Factory" t="Include">
+                  <e p="EnemyFactory.cs" t="Include" />
+                  <e p="IEnemyFactory.cs" t="Include" />
+                </e>
                 <e p="Registrars" t="Include">
                   <e p="EnemyAnimatorRegistrar.cs" t="Include" />
                   <e p="EnemyRegistrar.cs" t="Include" />
@@ -97,12 +176,18 @@
                 <e p="System" t="Include">
                   <e p="EnemyChaseHeroSystem.cs" t="Include" />
                   <e p="EnemyDeathSystem.cs" t="Include" />
+                  <e p="EnemySpawnSystem.cs" t="Include" />
                   <e p="FinalizeEnemyDeathProcessingSystem.cs" t="Include" />
+                  <e p="InitializeSpawnTimerSystem.cs" t="Include" />
                 </e>
               </e>
               <e p="Hero" t="Include">
                 <e p="Behaviours" t="Include">
                   <e p="HeroAnimator.cs" t="Include" />
+                </e>
+                <e p="Factory" t="Include">
+                  <e p="HeroFactory.cs" t="Include" />
+                  <e p="IHeroFactory.cs" t="Include" />
                 </e>
                 <e p="HeroComponent.cs" t="Include" />
                 <e p="HeroFeature.cs" t="Include" />
@@ -114,6 +199,7 @@
                   <e p="AnimateHeroMovementSystem.cs" t="Include" />
                   <e p="FinalizeHeroDeathProcessingSystem.cs" t="Include" />
                   <e p="HeroDeathSystem.cs" t="Include" />
+                  <e p="InitializeHeroSystem.cs" t="Include" />
                   <e p="SetHeroDirectionByInputSystem.cs" t="Include" />
                 </e>
               </e>
@@ -122,6 +208,7 @@
                 <e p="LifetimeComponents.cs" t="Include" />
                 <e p="Systems" t="Include">
                   <e p="MarkDeadSystem.cs" t="Include" />
+                  <e p="UnapplyStatusesOfDeadTargetSystem.cs" t="Include" />
                 </e>
               </e>
               <e p="Movement" t="Include">
@@ -129,15 +216,51 @@
                 <e p="MovementFeature.cs" t="Include" />
                 <e p="System" t="Include">
                   <e p="DirectionalDeltaMoveSystem.cs" t="Include" />
+                  <e p="RotateAlongDirectionSystem.cs" t="Include" />
                   <e p="TurnAlongDirectionSystem.cs" t="Include" />
                   <e p="UpdateTransformPositionSystem.cs" t="Include" />
+                </e>
+              </e>
+              <e p="Statuses" t="Include">
+                <e p="Applier" t="Include">
+                  <e p="IStatusApplier.cs" t="Include" />
+                  <e p="StatusApplier.cs" t="Include" />
+                </e>
+                <e p="Factory" t="Include">
+                  <e p="IStatusFactory.cs" t="Include" />
+                  <e p="StatusFactory.cs" t="Include" />
+                </e>
+                <e p="Indexing" t="Include">
+                  <e p="StatusKey.cs" t="Include" />
+                  <e p="StatusKeyEqualityComparer.cs" t="Include" />
+                </e>
+                <e p="StatusComponents.cs" t="Include" />
+                <e p="StatusFeature.cs" t="Include" />
+                <e p="StatusSetup.cs" t="Include" />
+                <e p="StatusTypeId.cs" t="Include" />
+                <e p="System" t="Include">
+                  <e p="ApplyFreezeStatusSystem.cs" t="Include" />
+                  <e p="CleanupUnappliedStatuses.cs" t="Include" />
+                  <e p="CleanupUnappliedStatusLinkedChanges.cs" t="Include" />
+                  <e p="PeriodicDamageStatusSystem.cs" t="Include" />
+                  <e p="StatusDurationSystem.cs" t="Include" />
+                  <e p="StatusVisuals" t="Include">
+                    <e p="ApplyFreezeVisualsSystem.cs" t="Include" />
+                    <e p="ApplyPoisonVisualsSystem.cs" t="Include" />
+                    <e p="UnapplyFreezeVisualsSystem.cs" t="Include" />
+                    <e p="UnapplyPoisonVisualsSystem.cs" t="Include" />
+                  </e>
+                  <e p="StatusVisualsFeature.cs" t="Include" />
                 </e>
               </e>
               <e p="TargetCollection" t="Include">
                 <e p="CollectTargetsFeature.cs" t="Include" />
                 <e p="System" t="Include">
+                  <e p="CastForTargetsNoLimitSystem.cs" t="Include" />
+                  <e p="CastForTargetsWithLimitSystem.cs" t="Include" />
                   <e p="CleanupTargetBuffersSystem.cs" t="Include" />
                   <e p="CollectTargetsIntervalSystem.cs" t="Include" />
+                  <e p="MarkReachedSystem.cs" t="Include" />
                   <e p="TargetSystem.cs" t="Include" />
                 </e>
                 <e p="TargetCollectionComponents.cs" t="Include" />
@@ -156,7 +279,10 @@
                 <e p="InitializeInputSystem.cs" t="Include" />
               </e>
             </e>
-            <e p="Levels" t="Include" />
+            <e p="Levels" t="Include">
+              <e p="ILevelDataProvider.cs" t="Include" />
+              <e p="LevelDataProvider.cs" t="Include" />
+            </e>
             <e p="StaticData" t="Include">
               <e p="IStaticDataService.cs" t="Include" />
               <e p="StaticDataService.cs" t="Include" />
@@ -172,19 +298,38 @@
             <e p="Feature.cs" t="Include" />
             <e p="Game" t="Include">
               <e p="Components" t="Include">
+                <e p="GameAbilityIdComponent.cs" t="Include" />
+                <e p="GameAffectedComponent.cs" t="Include" />
+                <e p="GameAppliedComponent.cs" t="Include" />
+                <e p="GameApplierStatusLinkComponent.cs" t="Include" />
+                <e p="GameArmamentComponent.cs" t="Include" />
                 <e p="GameAxisInputComponent.cs" t="Include" />
+                <e p="GameBaseStatsComponent.cs" t="Include" />
                 <e p="GameCollectingTargetsContinuouslyComponent.cs" t="Include" />
                 <e p="GameCollectTargetsIntervalComponent.cs" t="Include" />
                 <e p="GameCollectTargetsTimerComponent.cs" t="Include" />
+                <e p="GameCooldownComponent.cs" t="Include" />
+                <e p="GameCooldownLeftComponent.cs" t="Include" />
+                <e p="GameCooldownUpComponent.cs" t="Include" />
                 <e p="GameCurrentHpComponent.cs" t="Include" />
                 <e p="GameDamageComponent.cs" t="Include" />
+                <e p="GameDamageEffectComponent.cs" t="Include" />
                 <e p="GameDamageTakenAnimatorComponent.cs" t="Include" />
                 <e p="GameDeadComponent.cs" t="Include" />
                 <e p="GameDestructedComponent.cs" t="Include" />
                 <e p="GameDirectionComponent.cs" t="Include" />
+                <e p="GameDurationComponent.cs" t="Include" />
+                <e p="GameEffectComponent.cs" t="Include" />
+                <e p="GameEffectSetupsComponent.cs" t="Include" />
+                <e p="GameEffectValueComponent.cs" t="Include" />
                 <e p="GameEnemyAnimatorComponent.cs" t="Include" />
                 <e p="GameEnemyComponent.cs" t="Include" />
                 <e p="GameEnemyTypeIdComponent.cs" t="Include" />
+                <e p="GameEntityLinkComponent.cs" t="Include" />
+                <e p="GameFollowingProducerComponent.cs" t="Include" />
+                <e p="GameFreezeComponent.cs" t="Include" />
+                <e p="GameGarlicAuraAbilityComponent.cs" t="Include" />
+                <e p="GameHealEffectComponent.cs" t="Include" />
                 <e p="GameHeroAnimatorComponent.cs" t="Include" />
                 <e p="GameHeroComponent.cs" t="Include" />
                 <e p="GameIdComponent.cs" t="Include" />
@@ -193,18 +338,39 @@
                 <e p="GameMaxHpComponent.cs" t="Include" />
                 <e p="GameMovementAvailableComponent.cs" t="Include" />
                 <e p="GameMovingComponent.cs" t="Include" />
+                <e p="GameOrbitingMushroomAbilityComponent.cs" t="Include" />
+                <e p="GameParentAbilityComponent.cs" t="Include" />
+                <e p="GamePeriodComponent.cs" t="Include" />
+                <e p="GamePoisonComponent.cs" t="Include" />
+                <e p="GameProcessedComponent.cs" t="Include" />
                 <e p="GameProcessedTargetsComponent.cs" t="Include" />
                 <e p="GameProcessingDeathComponent.cs" t="Include" />
+                <e p="GameProducerIdComponent.cs" t="Include" />
                 <e p="GameRadiusComponent.cs" t="Include" />
                 <e p="GameReachedComponent.cs" t="Include" />
                 <e p="GameReadyToCollectTargetsComponent.cs" t="Include" />
+                <e p="GameRecreatedOnUpgradeComponent.cs" t="Include" />
+                <e p="GameRotationAlignedAlongDirectionComponent.cs" t="Include" />
                 <e p="GameSelfDestructTimerComponent.cs" t="Include" />
                 <e p="GameSpawnTimerComponent.cs" t="Include" />
                 <e p="GameSpeedComponent.cs" t="Include" />
                 <e p="GameSpriteRendererComponent.cs" t="Include" />
+                <e p="GameStatChangeComponent.cs" t="Include" />
+                <e p="GameStatModifiersComponent.cs" t="Include" />
+                <e p="GameStatusComponent.cs" t="Include" />
+                <e p="GameStatusSetupsComponent.cs" t="Include" />
+                <e p="GameStatusTypeIdComponent.cs" t="Include" />
+                <e p="GameStatusVisualsComponent.cs" t="Include" />
                 <e p="GameTargetBufferComponent.cs" t="Include" />
+                <e p="GameTargetIdComponent.cs" t="Include" />
+                <e p="GameTargetLimitComponent.cs" t="Include" />
+                <e p="GameTimeLeftComponent.cs" t="Include" />
+                <e p="GameTimeSinceLastTickComponent.cs" t="Include" />
                 <e p="GameTransformComponent.cs" t="Include" />
                 <e p="GameTurnedAlongDirectionsComponent.cs" t="Include" />
+                <e p="GameUnappliedComponent.cs" t="Include" />
+                <e p="GameUpgradeRequestComponent.cs" t="Include" />
+                <e p="GameVegetableBoltAbilityComponent.cs" t="Include" />
                 <e p="GameViewComponent.cs" t="Include" />
                 <e p="GameViewPathComponent.cs" t="Include" />
                 <e p="GameViewPrefabComponent.cs" t="Include" />
@@ -217,7 +383,6 @@
               <e p="GameMatcher.cs" t="Include" />
             </e>
             <e p="Input" t="Include">
-              <e p="Components" t="Include" />
               <e p="InputAttribute.cs" t="Include" />
               <e p="InputComponentsLookup.cs" t="Include" />
               <e p="InputContext.cs" t="Include" />
@@ -266,35 +431,30 @@
               <e p="TimerExecuteSystem.cs" t="Include" />
             </e>
             <e p="View" t="Include">
+              <e p="BindViewFeature.cs" t="Include" />
               <e p="EntityBehaviour.cs" t="Include" />
               <e p="EntityDependant.cs" t="Include" />
+              <e p="Factory" t="Include">
+                <e p="EntityViewFactory.cs" t="Include" />
+                <e p="IEntityViewFactory.cs" t="Include" />
+              </e>
               <e p="IEntityView.cs" t="Include" />
               <e p="Registrars" t="Include">
                 <e p="EntityComponentRegistrar.cs" t="Include" />
                 <e p="IEntityComponentRegistrar.cs" t="Include" />
               </e>
               <e p="SelfInitializedEntityView.cs" t="Include" />
+              <e p="System" t="Include">
+                <e p="BindEntityViewFromPathSystem.cs" t="Include" />
+                <e p="BindEntityViewFromPrefabSystem.cs" t="Include" />
+              </e>
             </e>
           </e>
         </e>
         <e p="Entitas" t="Include">
-          <e p="DesperateDevs" t="Include">
-            <e p="Editor" t="Include" />
-          </e>
           <e p="Entitas" t="Include">
-            <e p="Editor" t="Include">
-              <e p="Images" t="Include" />
-            </e>
             <e p="LICENSE.txt" t="Include" />
           </e>
-          <e p="Jenny" t="Include">
-            <e p="Editor" t="Include">
-              <e p="Images" t="Include" />
-              <e p="Jenny" t="Include" />
-            </e>
-          </e>
-          <e p="Sherlog" t="Include" />
-          <e p="TCPeasy" t="Include" />
         </e>
         <e p="Plugins" t="Include">
           <e p="com.unity.nuget.newtonsoft-json@3.2.1" t="Include">
@@ -309,9 +469,6 @@
           </e>
           <e p="Demigiant" t="Include">
             <e p="DOTween" t="Include">
-              <e p="Editor" t="Include">
-                <e p="Imgs" t="Include" />
-              </e>
               <e p="Modules" t="Include">
                 <e p="DOTweenModuleAudio.cs" t="Include" />
                 <e p="DOTweenModuleEPOOutline.cs" t="Include" />
@@ -325,7 +482,6 @@
               <e p="readme.txt" t="Include" />
             </e>
           </e>
-          <e p="RSG.Promise" t="Include" />
           <e p="Zenject" t="Include">
             <e p="LICENSE.txt" t="Include" />
             <e p="OptionalExtras" t="Include">
@@ -337,9 +493,6 @@
                     <e p="MpmWindow.cs" t="Include" />
                   </e>
                   <e p="MpmSettingsInstaller.cs" t="Include" />
-                  <e p="Resources" t="Include">
-                    <e p="Installers" t="Include" />
-                  </e>
                   <e p="Zenject-PoolMonitor-Editor.asmdef" t="Include" />
                 </e>
               </e>
@@ -348,7 +501,6 @@
                   <e p="CecilExtensions.cs" t="Include" />
                   <e p="ReflectionBakingModuleEditor.cs" t="Include" />
                 </e>
-                <e p="Lib" t="Include" />
                 <e p="Unity" t="Include">
                   <e p="AssemblyPathRegistry.cs" t="Include" />
                   <e p="ReflectionBakingBuildObserver.cs" t="Include" />
@@ -712,147 +864,20 @@
             <e p="zenject.asmdef" t="Include" />
           </e>
         </e>
-        <e p="Resources" t="Include">
-          <e p="Gameplay" t="Include">
-            <e p="Enemies" t="Include">
-              <e p="Goblins" t="Include">
-                <e p="Barrel" t="Include">
-                  <e p="Blue" t="Include" />
-                  <e p="Purple" t="Include" />
-                  <e p="Red" t="Include" />
-                  <e p="Yellow" t="Include" />
-                </e>
-                <e p="TNT" t="Include">
-                  <e p="Blue" t="Include" />
-                  <e p="Dynamite" t="Include" />
-                  <e p="Purple" t="Include" />
-                  <e p="Red" t="Include" />
-                  <e p="Yellow" t="Include" />
-                </e>
-                <e p="Torch" t="Include">
-                  <e p="Blue" t="Include" />
-                  <e p="Purple" t="Include" />
-                  <e p="Red" t="Include" />
-                  <e p="Yellow" t="Include" />
-                </e>
-              </e>
-              <e p="Materials" t="Include" />
-            </e>
-            <e p="Hero" t="Include">
-              <e p="Blue" t="Include" />
-              <e p="Materials" t="Include" />
-            </e>
-          </e>
-        </e>
         <e p="ResourcesRaw" t="Include">
-          <e p="Cainos" t="Include">
-            <e p="Pixel Art Icon Pack - RPG" t="Include">
-              <e p="Texture" t="Include">
-                <e p="Equipment" t="Include" />
-                <e p="Food" t="Include" />
-                <e p="Material" t="Include" />
-                <e p="Misc" t="Include" />
-                <e p="Monster Part" t="Include" />
-                <e p="Ore &amp; Gem" t="Include" />
-                <e p="Potion" t="Include" />
-                <e p="Weapon &amp; Tool" t="Include" />
-              </e>
-            </e>
-          </e>
           <e p="Free Paper UI System v1.0" t="Include">
             <e p="Free Paper UI System" t="Include">
-              <e p="1 Sprites" t="Include">
-                <e p="Content" t="Include">
-                  <e p="9 Stamp" t="Include">
-                    <e p="Stamp" t="Include">
-                      <e p="idle" t="Include" />
-                      <e p="Stamped" t="Include" />
-                    </e>
-                    <e p="Stamp Mark" t="Include" />
-                  </e>
-                </e>
-              </e>
               <e p="LICENSE.txt" t="Include" />
-            </e>
-          </e>
-          <e p="Thaleah_PixelFont" t="Include">
-            <e p="Materials" t="Include" />
-          </e>
-          <e p="Tiny Swords (Update 010)" t="Include">
-            <e p="UI" t="Include">
-              <e p="Banners" t="Include" />
-              <e p="Buttons" t="Include" />
-              <e p="Icons" t="Include" />
-              <e p="Pointers" t="Include" />
-              <e p="ProgressBar" t="Include" />
-              <e p="Ribbons" t="Include" />
             </e>
           </e>
         </e>
         <e p="ResourcesStatic" t="Include">
           <e p="Common" t="Include">
-            <e p="Materials" t="Include" />
             <e p="Shaders" t="Include">
               <e p="ColorizeWithOverlayAndSoftOutline.shader" t="Include" />
             </e>
           </e>
-          <e p="Environment" t="Include">
-            <e p="Factions" t="Include">
-              <e p="Goblins" t="Include">
-                <e p="Buildings" t="Include">
-                  <e p="Wood_Tower" t="Include" />
-                </e>
-              </e>
-              <e p="Knights" t="Include">
-                <e p="Buildings" t="Include">
-                  <e p="Castle" t="Include" />
-                  <e p="House" t="Include" />
-                  <e p="Tower" t="Include" />
-                </e>
-                <e p="Troops" t="Include">
-                  <e p="Archer" t="Include">
-                    <e p="Arrow" t="Include" />
-                    <e p="Blue" t="Include" />
-                    <e p="Purple" t="Include" />
-                    <e p="Red" t="Include" />
-                    <e p="Yellow" t="Include" />
-                  </e>
-                  <e p="Pawn" t="Include">
-                    <e p="Blue" t="Include" />
-                    <e p="Purple" t="Include" />
-                    <e p="Red" t="Include" />
-                    <e p="Yellow" t="Include" />
-                  </e>
-                  <e p="Warrior" t="Include">
-                    <e p="Purple" t="Include" />
-                    <e p="Red" t="Include" />
-                    <e p="Yellow" t="Include" />
-                  </e>
-                </e>
-              </e>
-            </e>
-            <e p="Meadow" t="Include">
-              <e p="Deco" t="Include">
-                <e p="Gold Mine" t="Include" />
-                <e p="Sheep" t="Include" />
-                <e p="Trees" t="Include" />
-              </e>
-              <e p="Terrain" t="Include">
-                <e p="Bridge" t="Include" />
-                <e p="Ground" t="Include" />
-                <e p="Water" t="Include">
-                  <e p="Foam" t="Include" />
-                  <e p="Rocks" t="Include" />
-                </e>
-              </e>
-              <e p="Tiles" t="Include">
-                <e p="Deco" t="Include" />
-              </e>
-            </e>
-          </e>
-          <e p="Levels" t="Include" />
         </e>
-        <e p="Scenes" t="Include" />
       </e>
       <e p="ecs-Vampire.sln" t="IncludeFlat" />
       <e p="obj" t="ExcludeRecursive" />

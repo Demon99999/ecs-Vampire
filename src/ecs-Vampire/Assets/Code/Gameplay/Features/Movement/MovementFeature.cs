@@ -13,6 +13,8 @@ namespace Code.Gameplay.Features.Movement
             Add(systemFactory.Create<TurnAlongDirectionSystem>());
 
             Add(systemFactory.Create<UpdateTransformPositionSystem>());
+            
+            Add(systemFactory.Create<RotateAlongDirectionSystem>());
         }
     }
 }
