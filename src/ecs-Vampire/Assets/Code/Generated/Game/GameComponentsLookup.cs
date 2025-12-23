@@ -60,33 +60,37 @@ public static class GameComponentsLookup {
     public const int Direction = 49;
     public const int MovementAvailable = 50;
     public const int Moving = 51;
-    public const int RotationAlignedAlongDirection = 52;
-    public const int Speed = 53;
-    public const int TurnedAlongDirections = 54;
-    public const int Affected = 55;
-    public const int Applied = 56;
-    public const int ApplierStatusLink = 57;
-    public const int Duration = 58;
-    public const int Freeze = 59;
-    public const int Period = 60;
-    public const int Poison = 61;
-    public const int Status = 62;
-    public const int StatusTypeId = 63;
-    public const int TimeLeft = 64;
-    public const int TimeSinceLastTick = 65;
-    public const int Unapplied = 66;
-    public const int CollectingTargetsContinuously = 67;
-    public const int CollectTargetsInterval = 68;
-    public const int CollectTargetsTimer = 69;
-    public const int LayerMask = 70;
-    public const int ProcessedTargets = 71;
-    public const int Reached = 72;
-    public const int ReadyToCollectTargets = 73;
-    public const int TargetBuffer = 74;
-    public const int AxisInput = 75;
-    public const int Input = 76;
+    public const int OrbitCenterFollowTarget = 52;
+    public const int OrbitCenterPosition = 53;
+    public const int OrbitPhase = 54;
+    public const int OrbitRadius = 55;
+    public const int RotationAlignedAlongDirection = 56;
+    public const int Speed = 57;
+    public const int TurnedAlongDirections = 58;
+    public const int Affected = 59;
+    public const int Applied = 60;
+    public const int ApplierStatusLink = 61;
+    public const int Duration = 62;
+    public const int Freeze = 63;
+    public const int Period = 64;
+    public const int Poison = 65;
+    public const int Status = 66;
+    public const int StatusTypeId = 67;
+    public const int TimeLeft = 68;
+    public const int TimeSinceLastTick = 69;
+    public const int Unapplied = 70;
+    public const int CollectingTargetsContinuously = 71;
+    public const int CollectTargetsInterval = 72;
+    public const int CollectTargetsTimer = 73;
+    public const int LayerMask = 74;
+    public const int ProcessedTargets = 75;
+    public const int Reached = 76;
+    public const int ReadyToCollectTargets = 77;
+    public const int TargetBuffer = 78;
+    public const int AxisInput = 79;
+    public const int Input = 80;
 
-    public const int TotalComponents = 77;
+    public const int TotalComponents = 81;
 
     public static readonly string[] componentNames = {
         "Destructed",
@@ -141,6 +145,10 @@ public static class GameComponentsLookup {
         "Direction",
         "MovementAvailable",
         "Moving",
+        "OrbitCenterFollowTarget",
+        "OrbitCenterPosition",
+        "OrbitPhase",
+        "OrbitRadius",
         "RotationAlignedAlongDirection",
         "Speed",
         "TurnedAlongDirections",
@@ -221,6 +229,10 @@ public static class GameComponentsLookup {
         typeof(Code.Gameplay.Features.Movement.Direction),
         typeof(Code.Gameplay.Features.Movement.MovementAvailable),
         typeof(Code.Gameplay.Features.Movement.Moving),
+        typeof(Code.Gameplay.Features.Movement.OrbitCenterFollowTarget),
+        typeof(Code.Gameplay.Features.Movement.OrbitCenterPosition),
+        typeof(Code.Gameplay.Features.Movement.OrbitPhase),
+        typeof(Code.Gameplay.Features.Movement.OrbitRadius),
         typeof(Code.Gameplay.Features.Movement.RotationAlignedAlongDirection),
         typeof(Code.Gameplay.Features.Movement.Speed),
         typeof(Code.Gameplay.Features.Movement.TurnedAlongDirections),

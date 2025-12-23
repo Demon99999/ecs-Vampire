@@ -99,6 +99,7 @@
                   <e p="IAbilityFactory.cs" t="Include" />
                 </e>
                 <e p="System" t="Include">
+                  <e p="OrbitingMushroomAbilitySystem.cs" t="Include" />
                   <e p="VegetableBoltAbilitySystem.cs" t="Include" />
                 </e>
               </e>
@@ -155,6 +156,7 @@
                 <e p="System" t="Include">
                   <e p="CleanupProcessedEffects.cs" t="Include" />
                   <e p="ProcessDamageEffectSystem.cs" t="Include" />
+                  <e p="ProcessHealEffectSystem.cs" t="Include" />
                   <e p="RemoveEffectsWithoutTargetsSystem.cs" t="Include" />
                 </e>
               </e>
@@ -216,6 +218,8 @@
                 <e p="MovementFeature.cs" t="Include" />
                 <e p="System" t="Include">
                   <e p="DirectionalDeltaMoveSystem.cs" t="Include" />
+                  <e p="OrbitalDeltaMoveSystem.cs" t="Include" />
+                  <e p="OrbitCenterFollowSystem.cs" t="Include" />
                   <e p="RotateAlongDirectionSystem.cs" t="Include" />
                   <e p="TurnAlongDirectionSystem.cs" t="Include" />
                   <e p="UpdateTransformPositionSystem.cs" t="Include" />
@@ -338,7 +342,11 @@
                 <e p="GameMaxHpComponent.cs" t="Include" />
                 <e p="GameMovementAvailableComponent.cs" t="Include" />
                 <e p="GameMovingComponent.cs" t="Include" />
+                <e p="GameOrbitCenterFollowTargetComponent.cs" t="Include" />
+                <e p="GameOrbitCenterPositionComponent.cs" t="Include" />
                 <e p="GameOrbitingMushroomAbilityComponent.cs" t="Include" />
+                <e p="GameOrbitPhaseComponent.cs" t="Include" />
+                <e p="GameOrbitRadiusComponent.cs" t="Include" />
                 <e p="GameParentAbilityComponent.cs" t="Include" />
                 <e p="GamePeriodComponent.cs" t="Include" />
                 <e p="GamePoisonComponent.cs" t="Include" />

@@ -102,3 +102,16 @@ InitTestScene*.unity*
 /src/ecs-Vampire/Library
 *.pid
 src/ecs-Vampire/Library/ilpp.pid
+src/ecs-Vampire/Library/APIUpdater/project-dependencies.graph
+src/ecs-Vampire/Library/Bee/fullprofile.json
+src/ecs-Vampire/Library/Bee/tundra.digestcache
+src/ecs-Vampire/Library/Search/transactions.db
+src/ecs-Vampire/Library/Bee/backend1.traceevents
+src/ecs-Vampire/Library/Bee/backend2.traceevents
+src/ecs-Vampire/Library/Bee/TundraBuildState.state
+src/ecs-Vampire/Library/Bee/buildprogram0.traceevents
+src/ecs-Vampire/Library/Bee/TundraBuildState.state.map
+src/ecs-Vampire/Library/ScriptAssemblies/Assembly-CSharp.dll
+src/ecs-Vampire/Library/APIUpdater/project-dependencies.graph
+src/ecs-Vampire/Library/com.unity.ide.rider/PersistedState.asset
+src/ecs-Vampire/Library/StateCache/MainStageHierarchy/4d/4d2a36d9faf65734f0bbefb3ee623532.json

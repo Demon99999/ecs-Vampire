@@ -12,7 +12,7 @@ namespace Code.Gameplay.Features.Abilities
       //Add(systems.Create<DestroyAbilityEntitiesOnUpgradeSystem>());
 
       Add(systems.Create<VegetableBoltAbilitySystem>());
-      //Add(systems.Create<OrbitingMushroomAbilitySystem>());
+      Add(systems.Create<OrbitingMushroomAbilitySystem>());
       //Add(systems.Create<GarlicAuraAbilitySystem>());
     }
   }
