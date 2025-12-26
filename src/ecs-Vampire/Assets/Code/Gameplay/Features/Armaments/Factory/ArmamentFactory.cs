@@ -3,6 +3,7 @@ using Code.Common.Entity;
 using Code.Common.Extensions;
 using Code.Gameplay.Features.Abilities;
 using Code.Gameplay.Features.Abilities.Configs;
+using Code.Gameplay.Features.Enchants;
 using Code.Gameplay.StaticData;
 using Code.Infrastructure.Identifiers;
 using UnityEngine;
@@ -42,6 +43,46 @@ namespace Code.Gameplay.Features.Armaments.Factory
                     .AddOrbitPhase(phase)
                     .AddOrbitRadius(setup.OrbitRadius)
                 ;
+        }
+        
+        public GameEntity CreateEffectAura(AbilityId parentAbilityId, int producerId, int level)
+        {
+            AbilityLevel abilityLevel = _staticDataService.GetAbilityLevel(AbilityId.GarlicAura, level);
+            AuraSetup setup = abilityLevel.AuraSetup;
+
+            return CreateEntity.Empty()
+                    .AddId(_identifierService.Next())
+                    .AddParentAbility(parentAbilityId)
+                    .AddViewPrefab(abilityLevel.ViewPrefab)
+                    .AddLayerMask(CollisionLayer.Enemy.AsMask())
+                    .AddRadius(setup.Radius)
+                    .AddCollectTargetsInterval(setup.Interval)
+                    .AddCollectTargetsTimer(0)
+                    .AddTargetBuffer(new List<int>(TargetBufferSize))
+                    .With(x => x.AddEffectSetups(abilityLevel.EffectSetups), when: !abilityLevel.EffectSetups.IsNullOrEmpty())
+                    .With(x => x.AddStatusSetups(abilityLevel.StatusSetups), when: !abilityLevel.StatusSetups.IsNullOrEmpty())
+                    .AddProducerId(producerId)
+                    .AddWorldPosition(Vector3.zero)
+                    .With(x => x.isFollowingProducer = true)
+                ;
+        }
+        
+        public GameEntity CreateExplosion(int producerId, Vector3 at)
+        {
+            EnchantConfig config = _staticDataService.GetEnchantConfig(EnchantTypeId.ExplosiveArmaments);
+      
+            return CreateEntity.Empty()
+                .AddId(_identifierService.Next())
+                .AddLayerMask(CollisionLayer.Enemy.AsMask())
+                .AddRadius(config.Radius)
+                .AddTargetBuffer(new List<int>(TargetBufferSize))
+                .With(x => x.AddEffectSetups(config.EffectSetups), when: !config.EffectSetups.IsNullOrEmpty())
+                .With(x => x.AddStatusSetups(config.StatusSetups), when: !config.StatusSetups.IsNullOrEmpty())
+                .AddViewPrefab(config.ViewPrefab)
+                .AddProducerId(producerId)
+                .AddWorldPosition(at)
+                .With(x => x.isReadyToCollectTargets = true)
+                .AddSelfDestructTimer(1);
         }
         
         private GameEntity CreateProjectileEntity(Vector3 at, AbilityLevel abilityLevel, ProjectileSetup setup)

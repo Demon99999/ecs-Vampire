@@ -75,6 +75,11 @@
                 <e p="UnityTimeService.cs" t="Include" />
               </e>
               <e p="Visuals" t="Include">
+                <e p="Enchants" t="Include">
+                  <e p="EnchantVisuals.cs" t="Include" />
+                  <e p="EnchantVisualsRegistrar.cs" t="Include" />
+                  <e p="IEnchantVisuals.cs" t="Include" />
+                </e>
                 <e p="IDamageTakenAnimator.cs" t="Include" />
                 <e p="StatusVisuals" t="Include">
                   <e p="IStatusVisuals.cs" t="Include" />
@@ -99,6 +104,7 @@
                   <e p="IAbilityFactory.cs" t="Include" />
                 </e>
                 <e p="System" t="Include">
+                  <e p="GarlicAuraAbilitySystem.cs" t="Include" />
                   <e p="OrbitingMushroomAbilitySystem.cs" t="Include" />
                   <e p="VegetableBoltAbilitySystem.cs" t="Include" />
                 </e>
@@ -106,12 +112,16 @@
               <e p="Armaments" t="Include">
                 <e p="ArmamentComponents.cs" t="Include" />
                 <e p="ArmamentFeature.cs" t="Include" />
+                <e p="Behaviours" t="Include">
+                  <e p="AuraSizeListener.cs" t="Include" />
+                </e>
                 <e p="Factory" t="Include">
                   <e p="ArmamentFactory.cs" t="Include" />
                   <e p="IArmamentFactory.cs" t="Include" />
                 </e>
                 <e p="System" t="Include">
                   <e p="FinalizeProcessedArmamentsSystem.cs" t="Include" />
+                  <e p="FollowProducerSystem.cs" t="Include" />
                   <e p="MarkProcessedOnTargetLimitExceededSystem.cs" t="Include" />
                 </e>
               </e>
@@ -158,6 +168,20 @@
                   <e p="ProcessDamageEffectSystem.cs" t="Include" />
                   <e p="ProcessHealEffectSystem.cs" t="Include" />
                   <e p="RemoveEffectsWithoutTargetsSystem.cs" t="Include" />
+                </e>
+              </e>
+              <e p="Enchants" t="Include">
+                <e p="Behaviours" t="Include">
+                  <e p="Enchant.cs" t="Include" />
+                </e>
+                <e p="EnchantComponents.cs" t="Include" />
+                <e p="EnchantConfig.cs" t="Include" />
+                <e p="EnchantFeature.cs" t="Include" />
+                <e p="EnchantTypeId.cs" t="Include" />
+                <e p="System" t="Include">
+                  <e p="ApplyPoisonEnchantVisualsSystem.cs" t="Include" />
+                  <e p="ExplosiveEnchantSystem.cs" t="Include" />
+                  <e p="PoisonEnchantSystem.cs" t="Include" />
                 </e>
               </e>
               <e p="Enemy" t="Include">
@@ -303,6 +327,7 @@
             <e p="Game" t="Include">
               <e p="Components" t="Include">
                 <e p="GameAbilityIdComponent.cs" t="Include" />
+                <e p="GameActiveComponent.cs" t="Include" />
                 <e p="GameAffectedComponent.cs" t="Include" />
                 <e p="GameAppliedComponent.cs" t="Include" />
                 <e p="GameApplierStatusLinkComponent.cs" t="Include" />
@@ -326,10 +351,13 @@
                 <e p="GameEffectComponent.cs" t="Include" />
                 <e p="GameEffectSetupsComponent.cs" t="Include" />
                 <e p="GameEffectValueComponent.cs" t="Include" />
+                <e p="GameEnchantTypeIdComponent.cs" t="Include" />
+                <e p="GameEnchantVisualsComponent.cs" t="Include" />
                 <e p="GameEnemyAnimatorComponent.cs" t="Include" />
                 <e p="GameEnemyComponent.cs" t="Include" />
                 <e p="GameEnemyTypeIdComponent.cs" t="Include" />
                 <e p="GameEntityLinkComponent.cs" t="Include" />
+                <e p="GameExplosiveEnchantComponent.cs" t="Include" />
                 <e p="GameFollowingProducerComponent.cs" t="Include" />
                 <e p="GameFreezeComponent.cs" t="Include" />
                 <e p="GameGarlicAuraAbilityComponent.cs" t="Include" />
@@ -350,6 +378,7 @@
                 <e p="GameParentAbilityComponent.cs" t="Include" />
                 <e p="GamePeriodComponent.cs" t="Include" />
                 <e p="GamePoisonComponent.cs" t="Include" />
+                <e p="GamePoisonEnchantComponent.cs" t="Include" />
                 <e p="GameProcessedComponent.cs" t="Include" />
                 <e p="GameProcessedTargetsComponent.cs" t="Include" />
                 <e p="GameProcessingDeathComponent.cs" t="Include" />
