@@ -11,6 +11,7 @@ using Code.Gameplay.Features.Enemy;
 using Code.Gameplay.Features.Hero;
 using Code.Gameplay.Features.Hero.System;
 using Code.Gameplay.Features.Lifetime;
+using Code.Gameplay.Features.Loot;
 using Code.Gameplay.Features.Movement;
 using Code.Gameplay.Features.Statuses;
 using Code.Gameplay.Features.TargetCollection;
@@ -32,7 +33,7 @@ namespace Code.Gameplay
             Add(systems.Create<EnemyFeature>());
             Add(systems.Create<DeathFeature>());
       
-            //Add(systems.Create<LootingFeature>());
+            Add(systems.Create<LootingFeature>());
       
             //Add(systems.Create<LevelUpFeature>());
       

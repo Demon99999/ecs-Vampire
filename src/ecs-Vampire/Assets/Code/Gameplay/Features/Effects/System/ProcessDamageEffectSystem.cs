@@ -22,8 +22,6 @@ namespace Code.Gameplay.Features.Effects.System
       {
         GameEntity target = effect.Target();
         
-        Debug.Log(_effects.count);
-        
         effect.isProcessed = true;
        
         if (target.isDead)
