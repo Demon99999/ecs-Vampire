@@ -7,6 +7,7 @@ using Code.Gameplay.Common.Time;
 using Code.Gameplay.Features.Abilities.Factory;
 using Code.Gameplay.Features.Armaments.Factory;
 using Code.Gameplay.Features.Effects.Factory;
+using Code.Gameplay.Features.Enchants.UIFactory;
 using Code.Gameplay.Features.Enemy.Factory;
 using Code.Gameplay.Features.Hero.Factory;
 using Code.Gameplay.Features.Loot.Factory;
@@ -161,7 +162,7 @@ namespace Code.Infrastructure.Installers
     private void BindUIFactories()
     {
       //Container.Bind<IWindowFactory>().To<WindowFactory>().AsSingle();
-      //Container.Bind<IEnchantUIFactory>().To<EnchantUIFactory>().AsSingle();
+      Container.Bind<IEnchantUIFactory>().To<EnchantUIFactory>().AsSingle();
       //Container.Bind<IAbilityUIFactory>().To<AbilityUIFactory>().AsSingle();
       //Container.Bind<IShopUIFactory>().To<ShopUIFactory>().AsSingle();
     }

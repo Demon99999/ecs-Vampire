@@ -12,7 +12,7 @@ namespace Code.Gameplay.Features.Enchants
       
       Add(systems.Create<ApplyPoisonEnchantVisualsSystem>());
       
-      //Add(systems.Create<AddEnchantsToHolderSystem>());
+      Add(systems.Create<AddEnchantsToHolderSystem>());
     }
   }
 }
