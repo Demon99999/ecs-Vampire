@@ -15,9 +15,9 @@ namespace Code.Gameplay.Common.Time
             _paused = false;
         }
 
-        public void SropTime()
+        public void StopTime()
         {
-            _paused = false;
+            _paused = true;
         }
     }
 }

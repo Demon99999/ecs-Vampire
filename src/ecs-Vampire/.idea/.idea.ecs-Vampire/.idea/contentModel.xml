@@ -104,9 +104,15 @@
                   <e p="IAbilityFactory.cs" t="Include" />
                 </e>
                 <e p="System" t="Include">
+                  <e p="DestroyAbilityEntitiesOnUpgradeSystem.cs" t="Include" />
                   <e p="GarlicAuraAbilitySystem.cs" t="Include" />
                   <e p="OrbitingMushroomAbilitySystem.cs" t="Include" />
                   <e p="VegetableBoltAbilitySystem.cs" t="Include" />
+                </e>
+                <e p="Upgrade" t="Include">
+                  <e p="AbilityUpgradeOption.cs" t="Include" />
+                  <e p="AbilityUpgradeService.cs" t="Include" />
+                  <e p="IAbilityUpgradeService.cs" t="Include" />
                 </e>
               </e>
               <e p="Armaments" t="Include">
@@ -173,15 +179,25 @@
               <e p="Enchants" t="Include">
                 <e p="Behaviours" t="Include">
                   <e p="Enchant.cs" t="Include" />
+                  <e p="EnchantHolder.cs" t="Include" />
                 </e>
                 <e p="EnchantComponents.cs" t="Include" />
                 <e p="EnchantConfig.cs" t="Include" />
                 <e p="EnchantFeature.cs" t="Include" />
                 <e p="EnchantTypeId.cs" t="Include" />
+                <e p="Registrars" t="Include">
+                  <e p="EnchantHolderRegistrar.cs" t="Include" />
+                </e>
                 <e p="System" t="Include">
+                  <e p="AddEnchantsToHolderSystem.cs" t="Include" />
                   <e p="ApplyPoisonEnchantVisualsSystem.cs" t="Include" />
                   <e p="ExplosiveEnchantSystem.cs" t="Include" />
                   <e p="PoisonEnchantSystem.cs" t="Include" />
+                  <e p="RemoveUnappliedEnchantsFromHolderSystem.cs" t="Include" />
+                </e>
+                <e p="UIFactory" t="Include">
+                  <e p="EnchantUIFactory.cs" t="Include" />
+                  <e p="IEnchantUIFactory.cs" t="Include" />
                 </e>
               </e>
               <e p="Enemy" t="Include">
@@ -202,6 +218,7 @@
                 <e p="System" t="Include">
                   <e p="EnemyChaseHeroSystem.cs" t="Include" />
                   <e p="EnemyDeathSystem.cs" t="Include" />
+                  <e p="EnemyDropLootSystem.cs" t="Include" />
                   <e p="EnemySpawnSystem.cs" t="Include" />
                   <e p="FinalizeEnemyDeathProcessingSystem.cs" t="Include" />
                   <e p="InitializeSpawnTimerSystem.cs" t="Include" />
@@ -229,12 +246,62 @@
                   <e p="SetHeroDirectionByInputSystem.cs" t="Include" />
                 </e>
               </e>
+              <e p="LevelUp" t="Include">
+                <e p="Behaviours" t="Include">
+                  <e p="AbilityCard.cs" t="Include" />
+                  <e p="ExperienceMeter.cs" t="Include" />
+                </e>
+                <e p="LevelUpComponents.cs" t="Include" />
+                <e p="LevelUpConfig.cs" t="Include" />
+                <e p="LevelUpFeature.cs" t="Include" />
+                <e p="Registrars" t="Include">
+                  <e p="ExperienceMeterRegistrar.cs" t="Include" />
+                </e>
+                <e p="Services" t="Include">
+                  <e p="ILevelUpService.cs" t="Include" />
+                  <e p="LevelUpService.cs" t="Include" />
+                </e>
+                <e p="System" t="Include">
+                  <e p="FinalizeProcessedLevelUpsSystem.cs" t="Include" />
+                  <e p="OpenLevelUpWindowSystem.cs" t="Include" />
+                  <e p="StartTimeOnLevelUpProcessedSystem.cs" t="Include" />
+                  <e p="StopTimeOnLevelUpSystem.cs" t="Include" />
+                  <e p="UpdateExperienceMeterSystem.cs" t="Include" />
+                  <e p="UpgradeAbilityOnRequestSystem.cs" t="Include" />
+                </e>
+                <e p="Windows" t="Include">
+                  <e p="AbilityUIFactory.cs" t="Include" />
+                  <e p="IAbilityUIFactory.cs" t="Include" />
+                  <e p="LevelUpWindow.cs" t="Include" />
+                </e>
+              </e>
               <e p="Lifetime" t="Include">
                 <e p="DeathFeature.cs" t="Include" />
                 <e p="LifetimeComponents.cs" t="Include" />
                 <e p="Systems" t="Include">
                   <e p="MarkDeadSystem.cs" t="Include" />
                   <e p="UnapplyStatusesOfDeadTargetSystem.cs" t="Include" />
+                </e>
+              </e>
+              <e p="Loot" t="Include">
+                <e p="Configs" t="Include">
+                  <e p="LootConfig.cs" t="Include" />
+                </e>
+                <e p="Factory" t="Include">
+                  <e p="ILootFactory.cs" t="Include" />
+                  <e p="LootFactory.cs" t="Include" />
+                </e>
+                <e p="LootComponents.cs" t="Include" />
+                <e p="LootingFeature.cs" t="Include" />
+                <e p="LootTypeId.cs" t="Include" />
+                <e p="System" t="Include">
+                  <e p="CastForPullablesSystem.cs" t="Include" />
+                  <e p="CleanupCollected.cs" t="Include" />
+                  <e p="CollectEffectItemSystem.cs" t="Include" />
+                  <e p="CollectExperienceSystem.cs" t="Include" />
+                  <e p="CollectStatusItemSystem.cs" t="Include" />
+                  <e p="CollectWhenNearSystem.cs" t="Include" />
+                  <e p="PullTowardsHeroSystem.cs" t="Include" />
                 </e>
               </e>
               <e p="Movement" t="Include">
@@ -315,6 +382,18 @@
               <e p="IStaticDataService.cs" t="Include" />
               <e p="StaticDataService.cs" t="Include" />
             </e>
+            <e p="Windows" t="Include">
+              <e p="BaseWindow.cs" t="Include" />
+              <e p="Configs" t="Include">
+                <e p="WindowConfig.cs" t="Include" />
+                <e p="WindowsConfig.cs" t="Include" />
+              </e>
+              <e p="IWindowFactory.cs" t="Include" />
+              <e p="IWindowService.cs" t="Include" />
+              <e p="WindowFactory.cs" t="Include" />
+              <e p="WindowId.cs" t="Include" />
+              <e p="WindowService.cs" t="Include" />
+            </e>
           </e>
           <e p="Generated" t="Include">
             <e p="Components" t="Include">
@@ -334,6 +413,7 @@
                 <e p="GameArmamentComponent.cs" t="Include" />
                 <e p="GameAxisInputComponent.cs" t="Include" />
                 <e p="GameBaseStatsComponent.cs" t="Include" />
+                <e p="GameCollectedComponent.cs" t="Include" />
                 <e p="GameCollectingTargetsContinuouslyComponent.cs" t="Include" />
                 <e p="GameCollectTargetsIntervalComponent.cs" t="Include" />
                 <e p="GameCollectTargetsTimerComponent.cs" t="Include" />
@@ -351,22 +431,28 @@
                 <e p="GameEffectComponent.cs" t="Include" />
                 <e p="GameEffectSetupsComponent.cs" t="Include" />
                 <e p="GameEffectValueComponent.cs" t="Include" />
+                <e p="GameEnchantsHolderComponent.cs" t="Include" />
                 <e p="GameEnchantTypeIdComponent.cs" t="Include" />
                 <e p="GameEnchantVisualsComponent.cs" t="Include" />
                 <e p="GameEnemyAnimatorComponent.cs" t="Include" />
                 <e p="GameEnemyComponent.cs" t="Include" />
                 <e p="GameEnemyTypeIdComponent.cs" t="Include" />
                 <e p="GameEntityLinkComponent.cs" t="Include" />
+                <e p="GameExperienceComponent.cs" t="Include" />
+                <e p="GameExperienceMeterComponent.cs" t="Include" />
                 <e p="GameExplosiveEnchantComponent.cs" t="Include" />
                 <e p="GameFollowingProducerComponent.cs" t="Include" />
                 <e p="GameFreezeComponent.cs" t="Include" />
                 <e p="GameGarlicAuraAbilityComponent.cs" t="Include" />
+                <e p="GameHealComponent.cs" t="Include" />
                 <e p="GameHealEffectComponent.cs" t="Include" />
                 <e p="GameHeroAnimatorComponent.cs" t="Include" />
                 <e p="GameHeroComponent.cs" t="Include" />
                 <e p="GameIdComponent.cs" t="Include" />
                 <e p="GameInputComponent.cs" t="Include" />
                 <e p="GameLayerMaskComponent.cs" t="Include" />
+                <e p="GameLevelUpComponent.cs" t="Include" />
+                <e p="GameLootTypeIdComponent.cs" t="Include" />
                 <e p="GameMaxHpComponent.cs" t="Include" />
                 <e p="GameMovementAvailableComponent.cs" t="Include" />
                 <e p="GameMovingComponent.cs" t="Include" />
@@ -377,12 +463,15 @@
                 <e p="GameOrbitRadiusComponent.cs" t="Include" />
                 <e p="GameParentAbilityComponent.cs" t="Include" />
                 <e p="GamePeriodComponent.cs" t="Include" />
+                <e p="GamePickupRadiusComponent.cs" t="Include" />
                 <e p="GamePoisonComponent.cs" t="Include" />
                 <e p="GamePoisonEnchantComponent.cs" t="Include" />
                 <e p="GameProcessedComponent.cs" t="Include" />
                 <e p="GameProcessedTargetsComponent.cs" t="Include" />
                 <e p="GameProcessingDeathComponent.cs" t="Include" />
                 <e p="GameProducerIdComponent.cs" t="Include" />
+                <e p="GamePullableComponent.cs" t="Include" />
+                <e p="GamePullingComponent.cs" t="Include" />
                 <e p="GameRadiusComponent.cs" t="Include" />
                 <e p="GameReachedComponent.cs" t="Include" />
                 <e p="GameReadyToCollectTargetsComponent.cs" t="Include" />
@@ -452,6 +541,7 @@
               <e p="BootstrapInstaller.cs" t="Include" />
               <e p="LevelInitializer.cs" t="Include" />
               <e p="SceneInitializationInstaller.cs" t="Include" />
+              <e p="UIInitializer.cs" t="Include" />
             </e>
             <e p="Loading" t="Include">
               <e p="ISceneLoader.cs" t="Include" />
@@ -913,6 +1003,38 @@
             <e p="Shaders" t="Include">
               <e p="ColorizeWithOverlayAndSoftOutline.shader" t="Include" />
             </e>
+          </e>
+        </e>
+        <e p="TextMesh Pro" t="Include">
+          <e p="Fonts" t="Include">
+            <e p="LiberationSans - OFL.txt" t="Include" />
+          </e>
+          <e p="Resources" t="Include">
+            <e p="LineBreaking Following Characters.txt" t="Include" />
+            <e p="LineBreaking Leading Characters.txt" t="Include" />
+          </e>
+          <e p="Shaders" t="Include">
+            <e p="TMP_Bitmap-Custom-Atlas.shader" t="Include" />
+            <e p="TMP_Bitmap-Mobile.shader" t="Include" />
+            <e p="TMP_Bitmap.shader" t="Include" />
+            <e p="TMP_SDF Overlay.shader" t="Include" />
+            <e p="TMP_SDF SSD.shader" t="Include" />
+            <e p="TMP_SDF-Mobile Masking.shader" t="Include" />
+            <e p="TMP_SDF-Mobile Overlay.shader" t="Include" />
+            <e p="TMP_SDF-Mobile SSD.shader" t="Include" />
+            <e p="TMP_SDF-Mobile.shader" t="Include" />
+            <e p="TMP_SDF-Surface-Mobile.shader" t="Include" />
+            <e p="TMP_SDF-Surface.shader" t="Include" />
+            <e p="TMP_SDF.shader" t="Include" />
+            <e p="TMP_Sprite.shader" t="Include" />
+            <e p="TMPro.cginc" t="Include" />
+            <e p="TMPro_Mobile.cginc" t="Include" />
+            <e p="TMPro_Properties.cginc" t="Include" />
+            <e p="TMPro_Surface.cginc" t="Include" />
+          </e>
+          <e p="Sprites" t="Include">
+            <e p="EmojiOne Attribution.txt" t="Include" />
+            <e p="EmojiOne.json" t="Include" />
           </e>
         </e>
       </e>

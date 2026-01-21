@@ -10,6 +10,7 @@ using Code.Gameplay.Features.Enchants;
 using Code.Gameplay.Features.Enemy;
 using Code.Gameplay.Features.Hero;
 using Code.Gameplay.Features.Hero.System;
+using Code.Gameplay.Features.LevelUp;
 using Code.Gameplay.Features.Lifetime;
 using Code.Gameplay.Features.Loot;
 using Code.Gameplay.Features.Movement;
@@ -35,7 +36,7 @@ namespace Code.Gameplay
       
             Add(systems.Create<LootingFeature>());
       
-            //Add(systems.Create<LevelUpFeature>());
+            Add(systems.Create<LevelUpFeature>());
       
             Add(systems.Create<MovementFeature>());
             Add(systems.Create<AbilityFeature>());

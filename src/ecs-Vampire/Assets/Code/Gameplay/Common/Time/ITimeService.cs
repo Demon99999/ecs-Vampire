@@ -7,6 +7,6 @@ namespace Code.Gameplay.Common.Time
         float DeltaTime { get; }
         DateTime UtcNow { get; }
         void StartTime();
-        void SropTime();
+        void StopTime();
     }
 }

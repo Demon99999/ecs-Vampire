@@ -12,8 +12,8 @@ namespace Code.Gameplay.Features.Abilities.Configs
   [Serializable]
   public class AbilityLevel
   {
-    //public Sprite Icon;
-    //public string Description;
+    public Sprite Icon;
+    public string Description;
     
     public float Cooldown;
 

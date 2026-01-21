@@ -2,6 +2,7 @@
 using System.Linq;
 using Code.Common.Extensions;
 using Code.Gameplay.Features.Abilities.Configs;
+using Code.Gameplay.Features.Abilities.Upgrade;
 using Code.Gameplay.Features.Armaments.Factory;
 using Code.Gameplay.Features.Cooldowns;
 using Code.Gameplay.StaticData;
@@ -14,7 +15,7 @@ namespace Code.Gameplay.Features.Abilities.System
   {
     private readonly IStaticDataService _staticDataService;
     private readonly IArmamentFactory _armamentFactory;
-    //private readonly IAbilityUpgradeService _abilityUpgradeService;
+    private readonly IAbilityUpgradeService _abilityUpgradeService;
     
     private readonly List<GameEntity> _buffer = new List<GameEntity>(1);
 
@@ -24,11 +25,11 @@ namespace Code.Gameplay.Features.Abilities.System
     public OrbitingMushroomAbilitySystem(
       GameContext game,
       IArmamentFactory armamentFactory,
-      IStaticDataService staticDataService)//,
-      //IAbilityUpgradeService abilityUpgradeService)
+      IStaticDataService staticDataService,
+      IAbilityUpgradeService abilityUpgradeService)
     {
       _staticDataService = staticDataService;
-      //_abilityUpgradeService = abilityUpgradeService;
+      _abilityUpgradeService = abilityUpgradeService;
       _armamentFactory = armamentFactory;
 
       _abilities = game.GetGroup(GameMatcher
@@ -47,8 +48,8 @@ namespace Code.Gameplay.Features.Abilities.System
       foreach (GameEntity ability in _abilities.GetEntities(_buffer))
       foreach (GameEntity hero in _heroes)
       {
-        //int level = _abilityUpgradeService.GetAbilityLevel(AbilityId.OrbitingMushroom);
-        AbilityLevel abilityLevel = _staticDataService.GetAbilityLevel(AbilityId.OrbitingMushroom, 1);
+        int level = _abilityUpgradeService.GetAbilityLevel(AbilityId.OrbitingMushroom);
+        AbilityLevel abilityLevel = _staticDataService.GetAbilityLevel(AbilityId.OrbitingMushroom, level);
         
         int projectileCount = abilityLevel.ProjectileSetup.ProjectileCount;
         
@@ -56,7 +57,7 @@ namespace Code.Gameplay.Features.Abilities.System
         {
           float phase = (2 * Mathf.PI * i) / projectileCount;
 
-          CreateProjectile(hero, phase, 1);
+          CreateProjectile(hero, phase, level);
         }
         
         ability.PutOnCooldown(abilityLevel.Cooldown);

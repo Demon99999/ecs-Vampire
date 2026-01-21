@@ -20,71 +20,157 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ef205645-d075-4a14-b8f5-34d8f1719057" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Gameplay/Common/Visuals/Enchants/EnchantVisuals.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Gameplay/Common/Visuals/Enchants/EnchantVisuals.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Gameplay/Common/Visuals/Enchants/EnchantVisualsRegistrar.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Gameplay/Common/Visuals/Enchants/EnchantVisualsRegistrar.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Gameplay/Common/Visuals/Enchants/IEnchantVisuals.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Gameplay/Common/Visuals/Enchants/IEnchantVisuals.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Gameplay/Features/Abilities/System/GarlicAuraAbilitySystem.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Gameplay/Features/Armaments/Behaviours/AuraSizeListener.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Gameplay/Features/Armaments/Behaviours/AuraSizeListener.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Gameplay/Features/Armaments/System/FollowProducerSystem.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Gameplay/Features/Enchants.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Gameplay/Features/Enchants/Behaviours.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Gameplay/Features/Enchants/Behaviours/Enchant.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Gameplay/Features/Enchants/EnchantComponents.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Gameplay/Features/Enchants/EnchantConfig.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Gameplay/Features/Enchants/EnchantFeature.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Gameplay/Features/Enchants/EnchantTypeId.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Gameplay/Features/Enchants/EnchantTypeId.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Gameplay/Features/Enchants/Registrars.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Gameplay/Features/Enchants/System.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Gameplay/Features/Enchants/System/ApplyPoisonEnchantVisualsSystem.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Gameplay/Features/Enchants/System/ExplosiveEnchantSystem.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Gameplay/Features/Enchants/System/PoisonEnchantSystem.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Gameplay/Features/Enchants/System/PoisonEnchantSystem.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Generated/Game/Components/GameActiveComponent.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Generated/Game/Components/GameActiveComponent.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Generated/Game/Components/GameEnchantTypeIdComponent.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Generated/Game/Components/GameEnchantTypeIdComponent.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Generated/Game/Components/GameEnchantVisualsComponent.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Generated/Game/Components/GameEnchantVisualsComponent.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Generated/Game/Components/GameExplosiveEnchantComponent.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Generated/Game/Components/GameExplosiveEnchantComponent.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Generated/Game/Components/GamePoisonEnchantComponent.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Generated/Game/Components/GamePoisonEnchantComponent.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Configs/Enchants.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Configs/Enchants/ExplosiveArmamentsConfig.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Configs/Enchants/ExplosiveArmamentsConfig.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Configs/Enchants/PoisonArmamentsConfig.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Configs/Enchants/PoisonArmamentsConfig.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Gameplay/Abilities/Explosions.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Gameplay/Abilities/Explosions/Explosion_Animator.controller" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Gameplay/Abilities/Explosions/Explosion_Animator.controller.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Gameplay/Abilities/Explosions/explode.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Gameplay/Abilities/Explosions/explode.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Gameplay/Abilities/Explosions/explosion.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Gameplay/Abilities/Explosions/explosion.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Gameplay/Features/Abilities/System/DestroyAbilityEntitiesOnUpgradeSystem.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Gameplay/Features/Abilities/System/DestroyAbilityEntitiesOnUpgradeSystem.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Gameplay/Features/Abilities/Upgrade/AbilityUpgradeOption.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Gameplay/Features/Abilities/Upgrade/AbilityUpgradeOption.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Gameplay/Features/Abilities/Upgrade/AbilityUpgradeService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Gameplay/Features/Abilities/Upgrade/AbilityUpgradeService.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Gameplay/Features/Abilities/Upgrade/IAbilityUpgradeService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Gameplay/Features/Abilities/Upgrade/IAbilityUpgradeService.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Gameplay/Features/LevelUp/Behaviours/AbilityCard.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Gameplay/Features/LevelUp/Behaviours/AbilityCard.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Gameplay/Features/LevelUp/Services.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Gameplay/Features/LevelUp/Services/ILevelUpService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Gameplay/Features/LevelUp/Services/ILevelUpService.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Gameplay/Features/LevelUp/Services/LevelUpService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Gameplay/Features/LevelUp/Services/LevelUpService.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Gameplay/Features/LevelUp/System/FinalizeProcessedLevelUpsSystem.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Gameplay/Features/LevelUp/System/FinalizeProcessedLevelUpsSystem.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Gameplay/Features/LevelUp/System/OpenLevelUpWindowSystem.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Gameplay/Features/LevelUp/System/OpenLevelUpWindowSystem.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Gameplay/Features/LevelUp/System/StartTimeOnLevelUpProcessedSystem.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Gameplay/Features/LevelUp/System/StartTimeOnLevelUpProcessedSystem.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Gameplay/Features/LevelUp/System/StopTimeOnLevelUpSystem.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Gameplay/Features/LevelUp/System/StopTimeOnLevelUpSystem.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Gameplay/Features/LevelUp/System/UpgradeAbilityOnRequestSystem.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Gameplay/Features/LevelUp/System/UpgradeAbilityOnRequestSystem.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Gameplay/Features/LevelUp/Windows.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Gameplay/Features/LevelUp/Windows/AbilityUIFactory.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Gameplay/Features/LevelUp/Windows/AbilityUIFactory.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Gameplay/Features/LevelUp/Windows/IAbilityUIFactory.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Gameplay/Features/LevelUp/Windows/IAbilityUIFactory.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Gameplay/Features/LevelUp/Windows/LevelUpWindow.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Gameplay/Windows/BaseWindow.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Gameplay/Windows/Configs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Gameplay/Windows/Configs/WindowConfig.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Gameplay/Windows/Configs/WindowConfig.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Gameplay/Windows/Configs/WindowsConfig.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Gameplay/Windows/Configs/WindowsConfig.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Gameplay/Windows/IWindowFactory.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Gameplay/Windows/WindowFactory.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Gameplay/Windows/WindowId.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Gameplay/Windows/WindowId.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Gameplay/Windows/WindowService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Infrastructure/Installers/UIInitializer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Configs/LevelUp.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Configs/LevelUp/levelUpConfig.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Configs/LevelUp/levelUpConfig.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/UI/Abilities.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/UI/Abilities/AbilityCard.controller" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/UI/Abilities/AbilityCard.controller.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/UI/Abilities/AbilityCard.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/UI/Abilities/AbilityCard.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/UI/Abilities/LevelUpWindow.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/UI/Abilities/LevelUpWindow.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/UI/Abilities/Stamp.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/UI/Abilities/Stamp.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/UI/Abilities/idle.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/UI/Abilities/idle.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/UI/Abilities/open.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/UI/Abilities/open.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Documentation.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Documentation/TextMesh Pro User Guide 2016.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Documentation/TextMesh Pro User Guide 2016.pdf.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Fonts.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Fonts/LiberationSans - OFL.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Fonts/LiberationSans - OFL.txt.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Fonts/LiberationSans.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Fonts/LiberationSans.ttf.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Drop Shadow.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Drop Shadow.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Outline.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Outline.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/LineBreaking Following Characters.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/LineBreaking Following Characters.txt.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/LineBreaking Leading Characters.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/LineBreaking Leading Characters.txt.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Sprite Assets.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Sprite Assets/EmojiOne.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Sprite Assets/EmojiOne.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Style Sheets.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Style Sheets/Default Style Sheet.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Style Sheets/Default Style Sheet.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/TMP Settings.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/TMP Settings.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_Bitmap-Custom-Atlas.shader" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_Bitmap-Custom-Atlas.shader.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_Bitmap-Mobile.shader" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_Bitmap-Mobile.shader.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_Bitmap.shader" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_Bitmap.shader.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF Overlay.shader" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF Overlay.shader.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF SSD.shader" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF SSD.shader.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Masking.shader" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Masking.shader.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Overlay.shader" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Overlay.shader.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile SSD.shader" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile SSD.shader.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile.shader" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile.shader.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF-Surface-Mobile.shader" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF-Surface-Mobile.shader.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF-Surface.shader" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF-Surface.shader.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF.shader" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF.shader.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_Sprite.shader" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_Sprite.shader.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMPro.cginc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMPro.cginc.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMPro_Mobile.cginc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMPro_Mobile.cginc.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMPro_Properties.cginc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMPro_Properties.cginc.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMPro_Surface.cginc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMPro_Surface.cginc.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Sprites.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Sprites/EmojiOne Attribution.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Sprites/EmojiOne Attribution.txt.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Sprites/EmojiOne.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Sprites/EmojiOne.json.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Sprites/EmojiOne.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Sprites/EmojiOne.png.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ecs-Vampire/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ecs-Vampire/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ecs-Vampire/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ecs-Vampire/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Code/Gameplay/BattleFeature.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Gameplay/BattleFeature.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Gameplay/Common/CommonComponets.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Gameplay/Common/CommonComponets.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Gameplay/Common/Time/ITimeService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Gameplay/Common/Time/ITimeService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Gameplay/Common/Time/UnityTimeService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Gameplay/Common/Time/UnityTimeService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Code/Gameplay/Features/Abilities/AbilityFeature.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Gameplay/Features/Abilities/AbilityFeature.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Gameplay/Features/Abilities/Factory/AbilityFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Gameplay/Features/Abilities/Factory/AbilityFactory.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Gameplay/Features/Abilities/Factory/IAbilityFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Gameplay/Features/Abilities/Factory/IAbilityFactory.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Gameplay/Features/Armaments/ArmamentFeature.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Gameplay/Features/Armaments/ArmamentFeature.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Gameplay/Features/Armaments/Factory/ArmamentFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Gameplay/Features/Armaments/Factory/ArmamentFactory.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Gameplay/Features/Armaments/Factory/IArmamentFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Gameplay/Features/Armaments/Factory/IArmamentFactory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Gameplay/Features/Abilities/Configs/AbilityLevel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Gameplay/Features/Abilities/Configs/AbilityLevel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Gameplay/Features/Abilities/System/GarlicAuraAbilitySystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Gameplay/Features/Abilities/System/GarlicAuraAbilitySystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Gameplay/Features/Abilities/System/OrbitingMushroomAbilitySystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Gameplay/Features/Abilities/System/OrbitingMushroomAbilitySystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Gameplay/Features/Abilities/System/VegetableBoltAbilitySystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Gameplay/Features/Abilities/System/VegetableBoltAbilitySystem.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Code/Gameplay/Features/Hero/System/InitializeHeroSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Gameplay/Features/Hero/System/InitializeHeroSystem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Gameplay/Features/Statuses/Factory/StatusFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Gameplay/Features/Statuses/Factory/StatusFactory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Gameplay/Features/LevelUp/LevelUpFeature.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Gameplay/Features/LevelUp/LevelUpFeature.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Gameplay/Features/LevelUp/System/UpdateExperienceMeterSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Gameplay/Features/LevelUp/System/UpdateExperienceMeterSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Gameplay/Features/Loot/System/CollectExperienceSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Gameplay/Features/Loot/System/CollectExperienceSystem.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Code/Gameplay/StaticData/IStaticDataService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Gameplay/StaticData/IStaticDataService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Code/Gameplay/StaticData/StaticDataService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Gameplay/StaticData/StaticDataService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Generated/Game/GameComponentsLookup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Generated/Game/GameComponentsLookup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Infrastructure/Installers/BootstrapInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Infrastructure/Installers/BootstrapInstaller.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Resources/Gameplay/Abilities/Projectiles/Mushroom/projectileBase.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Gameplay/Abilities/Projectiles/Mushroom/projectileBase.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Gameplay/Abilities/Projectiles/VegitableBolt/VegetablBolt.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Gameplay/Abilities/Projectiles/VegitableBolt/VegetablBolt.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Gameplay/Abilities/Projectiles/projectileBase.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Gameplay/Abilities/Projectiles/projectileBase.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ArtifactDB" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ArtifactDB" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/Bee/TundraBuildState.state" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/TundraBuildState.state" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/Bee/TundraBuildState.state.map" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/TundraBuildState.state.map" afterDir="false" />
@@ -97,7 +183,9 @@
       <change beforePath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/SceneVisibilityState.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SceneVisibilityState.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptMapper" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptMapper" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/Search/transactions.db" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Search/transactions.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ShaderCache/EditorEncounteredVariants" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ShaderCache/EditorEncounteredVariants" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/SourceAssetDB" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SourceAssetDB" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/StateCache/MainStageHierarchy/4d/4d2a36d9faf65734f0bbefb3ee623532.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/MainStageHierarchy/4d/4d2a36d9faf65734f0bbefb3ee623532.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/StateCache/SceneView/8c/8cd7c613bf844de3b80696e27a479d5e.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/SceneView/8c/8cd7c613bf844de3b80696e27a479d5e.json" afterDir="false" />
@@ -119,12 +207,14 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Code/Gameplay/Features/Statuses/Indexing/StatusKey.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/Gameplay/Features/LevelUp/System/UpgradeAbilityOnRequestSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Gameplay/Features/Enchants/EnchantFeature.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Gameplay/Features/Statuses/System/StatusVisualsFeature.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Infrastructure/View/IEntityView.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Gameplay/Features/TargetCollection/TargetCollectionComponents.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Common/Extensions/FunctionalExtensions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Infrastructure/View/EntityBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/Gameplay/Windows/WindowService.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Gameplay/Common/Visuals/IDamageTakenAnimator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Gameplay/Features/Statuses/System/StatusVisuals/UnapplyPoisonVisualsSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Gameplay/Features/Armaments/ArmamentComponents.cs" root0="FORCE_HIGHLIGHTING" />
@@ -133,8 +223,10 @@
     <setting file="file://$PROJECT_DIR$/Assets/Code/Gameplay/Features/Enchants/EnchantConfig.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Gameplay/Features/Armaments/Behaviours/AuraSizeListener.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../UnityProject/ecs-survivors-viewers-main/src/ecs-survivors/Assets/Code/Gameplay/Levels/ILevelDataProvider.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/Gameplay/Windows/WindowFactory.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Gameplay/Features/Statuses/System/PeriodicDamageStatusSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Gameplay/Features/Effects/System/RemoveEffectsWithoutTargetsSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/Gameplay/Features/LevelUp/Services/LevelUpService.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Common/Entity/ToStrings/EntityPrinter.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Gameplay/Features/Effects/System/CleanupProcessedEffects.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Gameplay/Features/Cooldowns/CooldownEntityExtensions.cs" root0="FORCE_HIGHLIGHTING" />
@@ -152,6 +244,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Code/Gameplay/Features/Hero/Behaviours/HeroAnimator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Gameplay/Input/Service/StandaloneInputService.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Gameplay/Features/Enemy/System/InitializeSpawnTimerSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/Gameplay/Features/Abilities/System/DestroyAbilityEntitiesOnUpgradeSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Gameplay/Common/GameplayConstants.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Gameplay/Features/CharacterStats/System/StatChangeSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Infrastructure/View/SelfInitializedEntityView.cs" root0="FORCE_HIGHLIGHTING" />
@@ -160,12 +253,15 @@
     <setting file="file://$PROJECT_DIR$/Assets/Code/Gameplay/Features/Enemy/EnemyFeature.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Gameplay/Common/Physics/IPhysicsService.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Gameplay/Features/Abilities/System/OrbitingMushroomAbilitySystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/Gameplay/Features/Abilities/Upgrade/AbilityUpgradeOption.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Gameplay/Features/Enemy/EnemyComponent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Gameplay/Features/Abilities/System/GarlicAuraAbilitySystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Gameplay/Features/TargetCollection/System/MarkReachedSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Common/Destruct/System/SelfDestructTimerSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/Gameplay/Windows/IWindowFactory.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../UnityProject/ecs-survivors-viewers-main/src/ecs-survivors/Assets/Code/Gameplay/Features/Statuses/Systems/StatusVisuals/ApplyFreezeVisualsSystem.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Gameplay/Features/Abilities/AbilityFeature.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/Gameplay/Windows/BaseWindow.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Common/Destruct/System/CleanupGameDestructedSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Gameplay/Features/Lifetime/Systems/UnapplyStatusesOfDeadTargetSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Gameplay/Input/Service/IInputService.cs" root0="FORCE_HIGHLIGHTING" />
@@ -190,12 +286,14 @@
     <setting file="file://$PROJECT_DIR$/Assets/Code/Gameplay/Features/Effects/Factory/EffectFactory.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Infrastructure/Identifiers/IdentifierService.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Gameplay/Features/Lifetime/LifetimeComponents.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/Gameplay/Features/LevelUp/System/StartTimeOnLevelUpProcessedSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Infrastructure/Installers/LevelInitializer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Gameplay/Features/Movement/System/RotateAlongDirectionSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Infrastructure/Identifiers/IIdentifierService.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Gameplay/Levels/LevelDataProvider.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Infrastructure/View/BindViewFeature.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Gameplay/Cameras/Provider/CameraProvider.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/Gameplay/Features/LevelUp/Behaviours/AbilityCard.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Infrastructure/AssetManagement/AssetProvider.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Common/Extensions/CollisionExtensions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Gameplay/Features/Effects/EffectSetup.cs" root0="FORCE_HIGHLIGHTING" />
@@ -205,17 +303,22 @@
     <setting file="file://$PROJECT_DIR$/Assets/Code/Gameplay/Features/Hero/Registrars/HeroAnimatorRegistrar.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Gameplay/Features/EffectApplication/System/ApplyEffectsOnTargetsSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Common/Extensions/VectorExtensions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/Gameplay/Windows/WindowId.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/Gameplay/Features/LevelUp/System/FinalizeProcessedLevelUpsSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Gameplay/Features/Movement/System/OrbitCenterFollowSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Common/Extensions/TransformExtensions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Gameplay/Features/Enchants/EnchantComponents.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Gameplay/Features/TargetCollection/System/CleanupTargetBuffersSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Gameplay/Features/TargetCollection/System/CollectTargetsIntervalSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/Infrastructure/Installers/UIInitializer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Gameplay/Common/Collisions/CollisionRegistry.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Gameplay/Features/Statuses/Applier/StatusApplier.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Gameplay/Features/Abilities/System/VegetableBoltAbilitySystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/Gameplay/Features/LevelUp/System/OpenLevelUpWindowSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Gameplay/Features/Statuses/System/StatusVisuals/ApplyFreezeVisualsSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Gameplay/Features/TargetCollection/CollectTargetsFeature.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Gameplay/Features/CharacterStats/Stats.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/Gameplay/Features/LevelUp/Windows/AbilityUIFactory.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Gameplay/Features/Statuses/StatusFeature.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Common/Entity/CreateEntity.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Gameplay/Features/Armaments/ArmamentFeature.cs" root0="FORCE_HIGHLIGHTING" />
@@ -230,28 +333,12 @@
     <setting file="file://$PROJECT_DIR$/Assets/Code/Gameplay/Features/Statuses/System/CleanupUnappliedStatusLinkedChanges.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Gameplay/Features/Armaments/System/FollowProducerSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Gameplay/Features/Enchants/Behaviours/Enchant.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/Gameplay/Features/LevelUp/Windows/LevelUpWindow.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Infrastructure/View/Registrars/EntityComponentRegistrar.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Code/Gameplay/Features/Armaments/ArmamentComponents.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Gameplay/Features/Abilities/Configs/AbilityLevel.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Gameplay/Features/EffectApplication/EffectApplicationFeature.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Gameplay/Features/Statuses/System/StatusDurationSystem.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Gameplay/Features/Statuses/System/CleanupUnappliedStatusLinkedChanges.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Gameplay/Features/Statuses/System/PeriodicDamageStatusSystem.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/EntityIndices/GameEntityIndices.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Gameplay/Features/Statuses/Applier/StatusApplier.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Infrastructure/Installers/BootstrapInstaller.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Gameplay/Features/EffectApplication/System/ApplyStatusesOnTargetsSystem.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Gameplay/Features/Statuses/System/StatusVisuals/ApplyPoisonVisualsSystem.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Common/Extensions/FunctionalExtensions.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Gameplay/Features/Enemy/Factory/EnemyFactory.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Gameplay/Features/Hero/Factory/HeroFactory.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Common/EntityIndices/GameEntityIndices.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Gameplay/Features/CharacterStats/System/StatChangeSystem.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Gameplay/Features/CharacterStats/System/ApplySpeedFromStatsSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Gameplay/Features/CharacterStats/StatsFeature.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Gameplay/Features/Statuses/StatusFeature.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Gameplay/Features/Statuses/System/CleanupUnappliedStatuses.cs" />
@@ -267,25 +354,42 @@
         <option value="$PROJECT_DIR$/Assets/Code/Gameplay/Features/Movement/System/OrbitCenterFollowSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Gameplay/Features/Movement/MovementFeature.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Gameplay/Features/Abilities/Factory/IAbilityFactory.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Gameplay/Features/Abilities/System/OrbitingMushroomAbilitySystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Gameplay/Features/Abilities/Factory/AbilityFactory.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Gameplay/Features/Armaments/Factory/IArmamentFactory.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Gameplay/Features/Abilities/AbilityFeature.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Gameplay/Features/Armaments/System/FollowProducerSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Gameplay/Features/Armaments/ArmamentFeature.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Gameplay/Common/CommonComponets.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Gameplay/Features/Abilities/System/GarlicAuraAbilitySystem.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Gameplay/Features/Hero/System/InitializeHeroSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Gameplay/Features/Armaments/Behaviours/AuraSizeListener.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Gameplay/StaticData/StaticDataService.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Gameplay/Features/Enchants/System/PoisonEnchantSystem.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Gameplay/BattleFeature.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Gameplay/Features/Enchants/EnchantComponents.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Gameplay/Features/Enchants/System/ApplyPoisonEnchantVisualsSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Gameplay/Features/Armaments/Factory/ArmamentFactory.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Gameplay/Features/Enchants/System/ExplosiveEnchantSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Gameplay/Features/Enchants/EnchantFeature.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Gameplay/Features/Statuses/Factory/StatusFactory.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Gameplay/Windows/Configs/WindowConfig.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Gameplay/Windows/WindowService.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Gameplay/StaticData/StaticDataService.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Gameplay/Features/Abilities/Configs/AbilityLevel.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Gameplay/Features/Loot/System/CollectExperienceSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Gameplay/Features/LevelUp/System/UpdateExperienceMeterSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Gameplay/Features/LevelUp/System/OpenLevelUpWindowSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Gameplay/Features/LevelUp/Windows/LevelUpWindow.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Infrastructure/Installers/BootstrapInstaller.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Gameplay/Features/LevelUp/System/UpgradeAbilityOnRequestSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Gameplay/Features/LevelUp/System/FinalizeProcessedLevelUpsSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Gameplay/Features/LevelUp/System/StartTimeOnLevelUpProcessedSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Gameplay/Features/LevelUp/System/StopTimeOnLevelUpSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Gameplay/Common/Time/ITimeService.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Gameplay/Features/LevelUp/LevelUpFeature.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Gameplay/BattleFeature.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Gameplay/Features/Abilities/System/VegetableBoltAbilitySystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Gameplay/Features/Abilities/System/OrbitingMushroomAbilitySystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Gameplay/Features/Abilities/System/GarlicAuraAbilitySystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Gameplay/Features/Abilities/System/DestroyAbilityEntitiesOnUpgradeSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Gameplay/Features/Abilities/AbilityFeature.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Gameplay/Features/Hero/System/InitializeHeroSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Gameplay/Common/Time/UnityTimeService.cs" />
       </list>
     </option>
   </component>
@@ -385,6 +489,8 @@
       <workItem from="1766578031098" duration="3235000" />
       <workItem from="1766673307217" duration="4164000" />
       <workItem from="1766777270147" duration="2425000" />
+      <workItem from="1768931564735" duration="1108000" />
+      <workItem from="1769012566588" duration="10756000" />
     </task>
     <servers />
   </component>
@@ -462,9 +568,9 @@
       <screen x="0" y="0" width="1536" height="816" />
     </state>
     <state x="378" y="15" width="706" height="801" key="find.popup/0.0.1536.816@0.0.1536.816" timestamp="1765292213240" />
-    <state x="431" y="137" width="672" height="678" key="search.everywhere.popup" timestamp="1766674148176">
+    <state x="431" y="137" width="672" height="678" key="search.everywhere.popup" timestamp="1769024945952">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state x="431" y="137" width="672" height="678" key="search.everywhere.popup/0.0.1536.816@0.0.1536.816" timestamp="1766674148176" />
+    <state x="431" y="137" width="672" height="678" key="search.everywhere.popup/0.0.1536.816@0.0.1536.816" timestamp="1769024945952" />
   </component>
 </project>
