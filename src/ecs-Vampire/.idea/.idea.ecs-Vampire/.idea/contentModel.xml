@@ -21,10 +21,14 @@
             </e>
             <e p="Entity" t="Include">
               <e p="CreateEntity.cs" t="Include" />
+              <e p="CreateInputEntity.cs" t="Include" />
+              <e p="CreateMetaEntity.cs" t="Include" />
               <e p="ToStrings" t="Include">
                 <e p="EntityPrinter.cs" t="Include" />
                 <e p="GameEntity.cs" t="Include" />
                 <e p="INamedEntity.cs" t="Include" />
+                <e p="InputEntity.cs" t="Include" />
+                <e p="MetaEntity.cs" t="Include" />
               </e>
             </e>
             <e p="EntityIndices" t="Include">
@@ -411,7 +415,6 @@
                 <e p="GameAppliedComponent.cs" t="Include" />
                 <e p="GameApplierStatusLinkComponent.cs" t="Include" />
                 <e p="GameArmamentComponent.cs" t="Include" />
-                <e p="GameAxisInputComponent.cs" t="Include" />
                 <e p="GameBaseStatsComponent.cs" t="Include" />
                 <e p="GameCollectedComponent.cs" t="Include" />
                 <e p="GameCollectingTargetsContinuouslyComponent.cs" t="Include" />
@@ -449,7 +452,6 @@
                 <e p="GameHeroAnimatorComponent.cs" t="Include" />
                 <e p="GameHeroComponent.cs" t="Include" />
                 <e p="GameIdComponent.cs" t="Include" />
-                <e p="GameInputComponent.cs" t="Include" />
                 <e p="GameLayerMaskComponent.cs" t="Include" />
                 <e p="GameLevelUpComponent.cs" t="Include" />
                 <e p="GameLootTypeIdComponent.cs" t="Include" />
@@ -509,6 +511,10 @@
               <e p="GameMatcher.cs" t="Include" />
             </e>
             <e p="Input" t="Include">
+              <e p="Components" t="Include">
+                <e p="InputAxisInputComponent.cs" t="Include" />
+                <e p="InputInputComponent.cs" t="Include" />
+              </e>
               <e p="InputAttribute.cs" t="Include" />
               <e p="InputComponentsLookup.cs" t="Include" />
               <e p="InputContext.cs" t="Include" />
@@ -518,6 +524,12 @@
             <e p="Meta" t="Include">
               <e p="Components" t="Include">
                 <e p="MetaDestructedComponent.cs" t="Include" />
+                <e p="MetaDurationComponent.cs" t="Include" />
+                <e p="MetaGoldComponent.cs" t="Include" />
+                <e p="MetaGoldGainBoostComponent.cs" t="Include" />
+                <e p="MetaGoldPerSecondComponent.cs" t="Include" />
+                <e p="MetaStorageComponent.cs" t="Include" />
+                <e p="MetaTickComponent.cs" t="Include" />
               </e>
               <e p="MetaAttribute.cs" t="Include" />
               <e p="MetaComponentsLookup.cs" t="Include" />
@@ -552,6 +564,35 @@
               <e p="Dummy.cs" t="Include" />
               <e p="JsonSerialization.cs" t="Include" />
             </e>
+            <e p="States" t="Include">
+              <e p="Factory" t="Include">
+                <e p="IStateFactory.cs" t="Include" />
+                <e p="StateFactory.cs" t="Include" />
+              </e>
+              <e p="GameStates" t="Include">
+                <e p="ActualizeProgressState.cs" t="Include" />
+                <e p="BattleEnterState.cs" t="Include" />
+                <e p="BattleLoopState.cs" t="Include" />
+                <e p="BootstrapState.cs" t="Include" />
+                <e p="HomeScreenState.cs" t="Include" />
+                <e p="LoadingBattleState.cs" t="Include" />
+                <e p="LoadingHomeScreenState.cs" t="Include" />
+                <e p="LoadProgressState.cs" t="Include" />
+              </e>
+              <e p="StateInfrastructure" t="Include">
+                <e p="EndOfFrameExitState.cs" t="Include" />
+                <e p="IExitableState.cs" t="Include" />
+                <e p="IPayloadState.cs" t="Include" />
+                <e p="IState.cs" t="Include" />
+                <e p="IUpdateable.cs" t="Include" />
+                <e p="SimplePayloadState.cs" t="Include" />
+                <e p="SimpleState.cs" t="Include" />
+              </e>
+              <e p="StateMachine" t="Include">
+                <e p="GameStateMachine.cs" t="Include" />
+                <e p="IGameStateMachine.cs" t="Include" />
+              </e>
+            </e>
             <e p="Systems" t="Include">
               <e p="ISystemFactory.cs" t="Include" />
               <e p="SystemFactory.cs" t="Include" />
@@ -575,6 +616,58 @@
                 <e p="BindEntityViewFromPathSystem.cs" t="Include" />
                 <e p="BindEntityViewFromPrefabSystem.cs" t="Include" />
               </e>
+            </e>
+          </e>
+          <e p="Meta" t="Include">
+            <e p="Features" t="Include">
+              <e p="AfkGain" t="Include">
+                <e p="Configs" t="Include">
+                  <e p="AfkGainConfig.cs" t="Include" />
+                </e>
+              </e>
+              <e p="Simulation" t="Include">
+                <e p="ActualizationFeature.cs" t="Include" />
+                <e p="SimulationComponents.cs" t="Include" />
+                <e p="SimulationFeature.cs" t="Include" />
+                <e p="Systems" t="Include">
+                  <e p="AfkGoldGainSystem.cs" t="Include" />
+                  <e p="BoosterDurationSystem.cs" t="Include" />
+                  <e p="CalculateGoldGainSystem.cs" t="Include" />
+                  <e p="CleanupTickSystem.cs" t="Include" />
+                  <e p="EmitTickSystem.cs" t="Include" />
+                  <e p="UpdateSimulationTimeSystem.cs" t="Include" />
+                </e>
+              </e>
+              <e p="Storage" t="Include">
+                <e p="StorageComponents.cs" t="Include" />
+              </e>
+            </e>
+            <e p="HomeScreenFeature.cs" t="Include" />
+            <e p="MetaConstants.cs" t="Include" />
+            <e p="UI" t="Include">
+              <e p="HUD" t="Include">
+                <e p="HomeHUD.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="Progress" t="Include">
+            <e p="Data" t="Include">
+              <e p="EntityData.cs" t="Include" />
+              <e p="ProgressData.cs" t="Include" />
+            </e>
+            <e p="EntitySnapshot.cs" t="Include" />
+            <e p="ISavedComponent.cs" t="Include" />
+            <e p="ProgressEntityExtensions.cs" t="Include" />
+            <e p="Provider" t="Include">
+              <e p="IProgressProvider.cs" t="Include" />
+              <e p="ProgressProvider.cs" t="Include" />
+            </e>
+            <e p="SaveLoad" t="Include">
+              <e p="ISaveLoadService.cs" t="Include" />
+              <e p="SaveLoadService.cs" t="Include" />
+            </e>
+            <e p="System" t="Include">
+              <e p="PeriodicallySaveProgressSystem.cs" t="Include" />
             </e>
           </e>
         </e>

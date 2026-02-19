@@ -29,6 +29,7 @@ using Code.Infrastructure.States.StateMachine;
 using Code.Infrastructure.Systems;
 using Code.Infrastructure.View.Factory;
 using Code.Progress.Provider;
+using Code.Progress.SaveLoad;
 using RSG;
 using UnityEngine;
 using Zenject;
@@ -73,7 +74,7 @@ namespace Code.Infrastructure.Installers
     {
       Container.BindInterfacesAndSelfTo<BootstrapState>().AsSingle();
       Container.BindInterfacesAndSelfTo<LoadProgressState>().AsSingle();
-      //Container.BindInterfacesAndSelfTo<ActualizeProgressState>().AsSingle();
+      Container.BindInterfacesAndSelfTo<ActualizeProgressState>().AsSingle();
       Container.BindInterfacesAndSelfTo<LoadingHomeScreenState>().AsSingle();
       Container.BindInterfacesAndSelfTo<HomeScreenState>().AsSingle();
       Container.BindInterfacesAndSelfTo<LoadingBattleState>().AsSingle();
@@ -99,7 +100,7 @@ namespace Code.Infrastructure.Installers
     private void BindProgressServices()
     {
       Container.Bind<IProgressProvider>().To<ProgressProvider>().AsSingle();
-      //Container.Bind<ISaveLoadService>().To<SaveLoadService>().AsSingle();
+      Container.Bind<ISaveLoadService>().To<SaveLoadService>().AsSingle();
     }
 
     private void BindGameplayServices()

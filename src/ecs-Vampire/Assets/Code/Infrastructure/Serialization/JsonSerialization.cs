@@ -2,7 +2,6 @@ using System.ComponentModel;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Utilities;
 
-
 namespace Code.Infrastructure.Serialization
 {
     public static class JsonSerialization
