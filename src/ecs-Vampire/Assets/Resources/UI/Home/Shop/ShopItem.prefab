@@ -700,7 +700,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 4867716627066536016}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9175a3808d1849469328086f12a608e5, type: 3}
+  m_Script: {fileID: 11500000, guid: fbab91847e80e154d9fac41052384cd2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Id: 0
@@ -710,8 +710,8 @@ MonoBehaviour:
   Boost: {fileID: 8227532067379980866}
   BuyButton: {fileID: 4509424422571587579}
   CanvasGroup: {fileID: 2750529763006945022}
-  EnoughColor: {r: 1, g: 0.8784314, b: 0.1254902, a: 1}
-  NotEnoughColor: {r: 0.85882354, g: 0.3137255, b: 0.14901961, a: 1}
+  EnoughColor: {r: 0.9924528, g: 0.87537897, b: 0.16291201, a: 1}
+  NotEnoughColor: {r: 0.4188679, g: 0.06243498, b: 0.06243498, a: 1}
 --- !u!1 &6221112723513602590
 GameObject:
   m_ObjectHideFlags: 0

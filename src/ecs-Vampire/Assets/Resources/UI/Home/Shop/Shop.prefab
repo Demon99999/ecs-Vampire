@@ -218,7 +218,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8263564233601249815}
-  - component: {fileID: -7155045951512055338}
+  - component: {fileID: 2104132732810554150}
   m_Layer: 5
   m_Name: Shop
   m_TagString: Untagged
@@ -251,7 +251,7 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 1920, y: 1080}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &-7155045951512055338
+--- !u!114 &2104132732810554150
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -260,7 +260,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 3016176294569328643}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2171269e5dd7460c9c49822429e7a641, type: 3}
+  m_Script: {fileID: 11500000, guid: f689cd999f9e4dc4a8daf89b479c1052, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   ItemsLayout: {fileID: 8126285239420231539}

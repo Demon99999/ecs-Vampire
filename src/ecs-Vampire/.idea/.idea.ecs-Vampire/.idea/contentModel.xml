@@ -403,6 +403,7 @@
             <e p="Components" t="Include">
               <e p="Interfaces" t="Include">
                 <e p="IDestructedEntity.cs" t="Include" />
+                <e p="IIdEntity.cs" t="Include" />
               </e>
             </e>
             <e p="Contexts.cs" t="Include" />
@@ -523,11 +524,15 @@
             </e>
             <e p="Meta" t="Include">
               <e p="Components" t="Include">
+                <e p="MetaBuyRequestComponent.cs" t="Include" />
                 <e p="MetaDestructedComponent.cs" t="Include" />
                 <e p="MetaDurationComponent.cs" t="Include" />
                 <e p="MetaGoldComponent.cs" t="Include" />
                 <e p="MetaGoldGainBoostComponent.cs" t="Include" />
                 <e p="MetaGoldPerSecondComponent.cs" t="Include" />
+                <e p="MetaIdComponent.cs" t="Include" />
+                <e p="MetaPurchasedComponent.cs" t="Include" />
+                <e p="MetaShopItemIdComponent.cs" t="Include" />
                 <e p="MetaStorageComponent.cs" t="Include" />
                 <e p="MetaTickComponent.cs" t="Include" />
               </e>
@@ -643,10 +648,49 @@
               </e>
             </e>
             <e p="HomeScreenFeature.cs" t="Include" />
+            <e p="HomeUIFeature.cs" t="Include" />
             <e p="MetaConstants.cs" t="Include" />
             <e p="UI" t="Include">
+              <e p="GoldHolder" t="Include">
+                <e p="Behaviours" t="Include">
+                  <e p="GoldHolder.cs" t="Include" />
+                </e>
+                <e p="Service" t="Include">
+                  <e p="IStorageUIService.cs" t="Include" />
+                  <e p="StorageUIService.cs" t="Include" />
+                </e>
+                <e p="Systems" t="Include">
+                  <e p="RefreshGoldGainBoostSystem.cs" t="Include" />
+                  <e p="RefreshGoldSystem.cs" t="Include" />
+                </e>
+              </e>
               <e p="HUD" t="Include">
                 <e p="HomeHUD.cs" t="Include" />
+              </e>
+              <e p="Shop" t="Include">
+                <e p="IShopItemFactory.cs" t="Include" />
+                <e p="Items" t="Include">
+                  <e p="ShopItem.cs" t="Include" />
+                  <e p="ShopItemConfig.cs" t="Include" />
+                  <e p="ShopItemId.cs" t="Include" />
+                </e>
+                <e p="Service" t="Include">
+                  <e p="IShopUIService.cs" t="Include" />
+                  <e p="ShopUIService.cs" t="Include" />
+                </e>
+                <e p="ShopComponents.cs" t="Include" />
+                <e p="ShopFeature.cs" t="Include" />
+                <e p="ShopItemFactory.cs" t="Include" />
+                <e p="ShopWindow.cs" t="Include" />
+                <e p="Systems" t="Include">
+                  <e p="BuyItemOnRequestSystem.cs" t="Include" />
+                  <e p="InitializePurchasedItemsSystem.cs" t="Include" />
+                  <e p="ProcessBoughtItemsSystem.cs" t="Include" />
+                </e>
+                <e p="UIFactory" t="Include">
+                  <e p="IShopUIFactory.cs" t="Include" />
+                  <e p="ShopUIFactory.cs" t="Include" />
+                </e>
               </e>
             </e>
           </e>

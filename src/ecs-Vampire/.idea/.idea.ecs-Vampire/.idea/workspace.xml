@@ -20,78 +20,76 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ef205645-d075-4a14-b8f5-34d8f1719057" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Common/Entity/CreateInputEntity.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Common/Entity/ToStrings/InputEntity.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Generated/Input/Components/InputAxisInputComponent.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Generated/Input/Components/InputAxisInputComponent.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Generated/Input/Components/InputInputComponent.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Generated/Input/Components/InputInputComponent.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Generated/Meta/Components/MetaDurationComponent.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Generated/Meta/Components/MetaDurationComponent.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Generated/Meta/Components/MetaGoldComponent.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Generated/Meta/Components/MetaGoldComponent.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Generated/Meta/Components/MetaGoldGainBoostComponent.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Generated/Meta/Components/MetaGoldGainBoostComponent.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Generated/Meta/Components/MetaGoldPerSecondComponent.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Generated/Meta/Components/MetaGoldPerSecondComponent.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Generated/Meta/Components/MetaStorageComponent.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Generated/Meta/Components/MetaStorageComponent.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Generated/Meta/Components/MetaTickComponent.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Generated/Meta/Components/MetaTickComponent.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Infrastructure/States/GameStates/ActualizeProgressState.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Meta/Features.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Meta/Features/AfkGain/Configs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Meta/Features/AfkGain/Configs/AfkGainConfig.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Meta/Features/AfkGain/Configs/AfkGainConfig.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Meta/Features/Simulation/ActualizationFeature.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Meta/Features/Simulation/SimulationComponents.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Meta/Features/Simulation/SimulationComponents.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Meta/Features/Simulation/SimulationFeature.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Meta/Features/Simulation/Systems/AfkGoldGainSystem.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Meta/Features/Simulation/Systems/BoosterDurationSystem.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Meta/Features/Simulation/Systems/CalculateGoldGainSystem.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Meta/Features/Simulation/Systems/CalculateGoldGainSystem.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Meta/Features/Simulation/Systems/CleanupTickSystem.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Meta/Features/Simulation/Systems/CleanupTickSystem.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Meta/Features/Simulation/Systems/EmitTickSystem.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Meta/Features/Simulation/Systems/EmitTickSystem.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Meta/Features/Simulation/Systems/UpdateSimulationTimeSystem.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Meta/Features/Storage.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Meta/Features/Storage/StorageComponents.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Meta/Features/Storage/StorageComponents.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Progress/EntitySnapshot.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Progress/EntitySnapshot.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Progress/ISavedComponent.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Progress/ProgressEntityExtensions.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Progress/SaveLoad.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Progress/SaveLoad/ISaveLoadService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Progress/SaveLoad/SaveLoadService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Progress/System/PeriodicallySaveProgressSystem.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Progress/System/PeriodicallySaveProgressSystem.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Configs/AfkGainConfig.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Configs/AfkGainConfig.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Generated/Components/Interfaces/IIdEntity.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Generated/Components/Interfaces/IIdEntity.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Generated/Meta/Components/MetaBuyRequestComponent.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Generated/Meta/Components/MetaIdComponent.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Generated/Meta/Components/MetaIdComponent.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Generated/Meta/Components/MetaPurchasedComponent.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Generated/Meta/Components/MetaShopItemIdComponent.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Infrastructure/Loading/SwitchToEntrySceneInEditor.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Infrastructure/Loading/SwitchToEntrySceneInEditor.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Meta/HomeUIFeature.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Meta/UI/GoldHolder.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Meta/UI/GoldHolder/Service/IStorageUIService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Meta/UI/GoldHolder/Service/IStorageUIService.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Meta/UI/GoldHolder/Service/StorageUIService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Meta/UI/GoldHolder/Service/StorageUIService.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Meta/UI/GoldHolder/Systems/RefreshGoldGainBoostSystem.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Meta/UI/GoldHolder/Systems/RefreshGoldGainBoostSystem.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Meta/UI/GoldHolder/Systems/RefreshGoldSystem.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Meta/UI/GoldHolder/Systems/RefreshGoldSystem.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Meta/UI/Shop/Items.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Meta/UI/Shop/Items/ShopItem.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Meta/UI/Shop/Items/ShopItem.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Meta/UI/Shop/Items/ShopItemConfig.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Meta/UI/Shop/Items/ShopItemConfig.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Meta/UI/Shop/Items/ShopItemId.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Meta/UI/Shop/Items/ShopItemId.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Meta/UI/Shop/Service/IShopUIService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Meta/UI/Shop/Service/IShopUIService.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Meta/UI/Shop/Service/ShopUIService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Meta/UI/Shop/Service/ShopUIService.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Meta/UI/Shop/ShopComponents.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Meta/UI/Shop/ShopFeature.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Meta/UI/Shop/ShopWindow.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Meta/UI/Shop/Systems/BuyItemOnRequestSystem.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Meta/UI/Shop/Systems/InitializePurchasedItemsSystem.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Meta/UI/Shop/Systems/InitializePurchasedItemsSystem.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Meta/UI/Shop/Systems/ProcessBoughtItemsSystem.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Meta/UI/Shop/UIFactory/IShopUIFactory.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Meta/UI/Shop/UIFactory/IShopUIFactory.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Meta/UI/Shop/UIFactory/ShopUIFactory.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Meta/UI/Shop/UIFactory/ShopUIFactory.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Configs/ShopItems.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Configs/ShopItems/Booster1.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Configs/ShopItems/Booster1.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Configs/ShopItems/Booster2.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Configs/ShopItems/Booster2.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Configs/ShopItems/Booster3.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Configs/ShopItems/Booster3.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Configs/ShopItems/Booster4.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Configs/ShopItems/Booster4.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Configs/ShopItems/Booster5.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Configs/ShopItems/Booster5.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Configs/ShopItems/Booster6.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Configs/ShopItems/Booster6.asset.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ecs-Vampire/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ecs-Vampire/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ecs-Vampire/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ecs-Vampire/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Gameplay/Features/Hero/System/SetHeroDirectionByInputSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Gameplay/Features/Hero/System/SetHeroDirectionByInputSystem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Gameplay/Input/InputComponent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Gameplay/Input/InputComponent.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Gameplay/Input/System/EmitInputSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Gameplay/Input/System/EmitInputSystem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Gameplay/Input/System/InitializeInputSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Gameplay/Input/System/InitializeInputSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Gameplay/Common/CommonComponets.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Gameplay/Common/CommonComponets.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Code/Gameplay/StaticData/IStaticDataService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Gameplay/StaticData/IStaticDataService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Code/Gameplay/StaticData/StaticDataService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Gameplay/StaticData/StaticDataService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Generated/Game/Components/GameAxisInputComponent.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Generated/Game/Components/GameAxisInputComponent.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Generated/Game/Components/GameInputComponent.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Generated/Game/Components/GameInputComponent.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Generated/Game/GameComponentsLookup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Generated/Game/GameComponentsLookup.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Generated/Input/InputComponentsLookup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Generated/Input/InputComponentsLookup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Generated/Contexts.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Generated/Contexts.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Generated/Game/Components/GameIdComponent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Generated/Game/Components/GameIdComponent.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Code/Generated/Meta/MetaComponentsLookup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Generated/Meta/MetaComponentsLookup.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Code/Infrastructure/Installers/BootstrapInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Infrastructure/Installers/BootstrapInstaller.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Infrastructure/Serialization/JsonSerialization.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Infrastructure/Serialization/JsonSerialization.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Infrastructure/States/GameStates/LoadProgressState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Infrastructure/States/GameStates/LoadProgressState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Infrastructure/States/GameStates/HomeScreenState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Infrastructure/States/GameStates/HomeScreenState.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Code/Meta/HomeScreenFeature.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Meta/HomeScreenFeature.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Meta/MetaConstants.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Meta/MetaConstants.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Progress/Data/EntityData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Progress/Data/EntityData.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Progress/Data/ProgressData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Progress/Data/ProgressData.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Configs/Windows/windowsConfig.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Configs/Windows/windowsConfig.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/UI/Home/Shop/Shop.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/UI/Home/Shop/Shop.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/UI/Home/Shop/ShopItem.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/UI/Home/Shop/ShopItem.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ResourcesStatic/Common/SwitchToEntryScene.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ResourcesStatic/Common/SwitchToEntryScene.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/HomeScreen.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/HomeScreen.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ArtifactDB" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ArtifactDB" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/Bee/TundraBuildState.state" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/TundraBuildState.state" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/Bee/TundraBuildState.state.map" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/TundraBuildState.state.map" afterDir="false" />
@@ -106,13 +104,15 @@
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/Search/transactions.db" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Search/transactions.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/SourceAssetDB" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SourceAssetDB" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/StateCache/MainStageHierarchy/4d/4d2a36d9faf65734f0bbefb3ee623532.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/MainStageHierarchy/4d/4d2a36d9faf65734f0bbefb3ee623532.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/StateCache/SceneView/8c/8cd7c613bf844de3b80696e27a479d5e.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/SceneView/8c/8cd7c613bf844de3b80696e27a479d5e.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/com.unity.ide.rider/PersistedState.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/com.unity.ide.rider/PersistedState.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/expandedItems" beforeDir="false" afterPath="$PROJECT_DIR$/Library/expandedItems" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ilpp.pid" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ilpp.pid" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2022.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2022.dwlt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp-firstpass.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp-firstpass.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/Zenject-Editor.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Zenject-Editor.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/Zenject.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Zenject.csproj.AssemblyReference.cache" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -133,7 +133,10 @@
     <setting file="file://$PROJECT_DIR$/Assets/Code/Infrastructure/View/EntityBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Gameplay/Windows/WindowService.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Gameplay/Common/Visuals/IDamageTakenAnimator.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/Meta/UI/Shop/Service/ShopUIService.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Gameplay/Features/Statuses/System/StatusVisuals/UnapplyPoisonVisualsSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/Meta/UI/Shop/ShopFeature.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/Meta/HomeUIFeature.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Gameplay/Features/Armaments/ArmamentComponents.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Gameplay/Features/EffectApplication/System/ApplyStatusesOnTargetsSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Progress/SaveLoad/SaveLoadService.cs" root0="FORCE_HIGHLIGHTING" />
@@ -145,6 +148,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Code/Gameplay/Features/Statuses/System/PeriodicDamageStatusSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Gameplay/Features/Effects/System/RemoveEffectsWithoutTargetsSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Gameplay/Features/LevelUp/Services/LevelUpService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/Meta/UI/Shop/Systems/ProcessBoughtItemsSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Common/Entity/ToStrings/EntityPrinter.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Gameplay/Features/Effects/System/CleanupProcessedEffects.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Gameplay/Features/Cooldowns/CooldownEntityExtensions.cs" root0="FORCE_HIGHLIGHTING" />
@@ -157,13 +161,16 @@
     <setting file="file://$PROJECT_DIR$/Assets/Code/Meta/Features/Simulation/Systems/EmitTickSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Gameplay/Features/Statuses/Factory/StatusFactory.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Gameplay/Features/Effects/EffectFeature.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/Meta/UI/GoldHolder/Systems/RefreshGoldSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Gameplay/Features/Abilities/Configs/AbilityLevel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Common/EntityIndices/GameEntityIndices.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../UnityProject/ecs-survivors-viewers-main/src/ecs-survivors/Assets/Code/Gameplay/Features/Statuses/StatusComponents.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/Meta/UI/Shop/ShopWindow.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Gameplay/Features/Hero/Behaviours/HeroAnimator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Gameplay/Input/Service/StandaloneInputService.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Meta/Features/Simulation/ActualizationFeature.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Gameplay/Features/Enemy/System/InitializeSpawnTimerSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/Meta/UI/Shop/UIFactory/ShopUIFactory.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Gameplay/Features/Abilities/System/DestroyAbilityEntitiesOnUpgradeSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Gameplay/Common/GameplayConstants.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Gameplay/Features/CharacterStats/System/StatChangeSystem.cs" root0="FORCE_HIGHLIGHTING" />
@@ -172,6 +179,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Code/Gameplay/Features/Statuses/System/StatusDurationSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Gameplay/Features/Enemy/EnemyFeature.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Gameplay/Common/Physics/IPhysicsService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/Meta/UI/Shop/Systems/BuyItemOnRequestSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Gameplay/Features/Abilities/System/OrbitingMushroomAbilitySystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Gameplay/Features/Abilities/Upgrade/AbilityUpgradeOption.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Common/Entity/ToStrings/InputEntity.cs" root0="FORCE_HIGHLIGHTING" />
@@ -197,8 +205,10 @@
     <setting file="file://$PROJECT_DIR$/Assets/Code/Gameplay/Features/Enchants/System/ApplyPoisonEnchantVisualsSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Gameplay/Features/Hero/System/HeroDeathSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../UnityProject/ecs-survivors-viewers-main/src/ecs-survivors/Assets/Code/Gameplay/Features/Abilities/AbilityId.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/Meta/UI/Shop/ShopComponents.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Infrastructure/Loading/ISceneLoader.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Gameplay/Features/Statuses/System/CleanupUnappliedStatuses.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/Meta/UI/Shop/Systems/InitializePurchasedItemsSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Infrastructure/View/System/BindEntityViewFromPathSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Infrastructure/View/System/BindEntityViewFromPrefabSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Gameplay/Features/Enemy/System/FinalizeEnemyDeathProcessingSystem.cs" root0="FORCE_HIGHLIGHTING" />
@@ -246,6 +256,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Code/Gameplay/Features/Abilities/System/VegetableBoltAbilitySystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Gameplay/Features/LevelUp/System/OpenLevelUpWindowSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Gameplay/Features/Statuses/System/StatusVisuals/ApplyFreezeVisualsSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/Meta/UI/Shop/Items/ShopItem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Gameplay/Features/TargetCollection/CollectTargetsFeature.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Gameplay/Features/CharacterStats/Stats.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Gameplay/Features/LevelUp/Windows/AbilityUIFactory.cs" root0="FORCE_HIGHLIGHTING" />
@@ -258,6 +269,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Code/Gameplay/Features/Enchants/EnchantTypeId.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Meta/Features/Simulation/SimulationComponents.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Gameplay/Features/Effects/System/ProcessHealEffectSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/Meta/UI/GoldHolder/Service/StorageUIService.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Gameplay/Features/Effects/EffectComponents.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Gameplay/Features/CharacterStats/System/ApplySpeedFromStatsSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Gameplay/Features/Enchants/System/ExplosiveEnchantSystem.cs" root0="FORCE_HIGHLIGHTING" />
@@ -273,14 +285,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Code/Gameplay/Features/Enchants/EnchantComponents.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Gameplay/Features/Enchants/System/ApplyPoisonEnchantVisualsSystem.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Gameplay/Features/Armaments/Factory/ArmamentFactory.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Gameplay/Features/Enchants/System/ExplosiveEnchantSystem.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Gameplay/Features/Enchants/EnchantFeature.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Gameplay/Features/Statuses/Factory/StatusFactory.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Gameplay/Windows/Configs/WindowConfig.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Gameplay/Windows/WindowService.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Gameplay/Features/Abilities/Configs/AbilityLevel.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Gameplay/Features/Loot/System/CollectExperienceSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Gameplay/Features/LevelUp/System/UpdateExperienceMeterSystem.cs" />
@@ -306,7 +310,6 @@
         <option value="$PROJECT_DIR$/Assets/Code/Gameplay/Features/Hero/System/SetHeroDirectionByInputSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Meta/Features/Storage/AfkGain/Configs/AfkGainConfig.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Meta/Features/AfkGain/Configs/AfkGainConfig.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Gameplay/StaticData/StaticDataService.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Meta/Features/Simulation/Systems/CleanupTickSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Meta/Features/Simulation/Systems/AfkGoldGainSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Progress/Data/ProgressData.cs" />
@@ -316,14 +319,23 @@
         <option value="$PROJECT_DIR$/Assets/Code/Progress/Data/EntityData.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Progress/SaveLoad/SaveLoadService.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Progress/ProgressEntityExtensions.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Infrastructure/Installers/BootstrapInstaller.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Infrastructure/States/GameStates/LoadProgressState.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Infrastructure/States/GameStates/ActualizeProgressState.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Meta/Features/Storage/StorageComponents.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Meta/Features/Simulation/SimulationComponents.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Progress/System/PeriodicallySaveProgressSystem.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Meta/HomeScreenFeature.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Meta/MetaConstants.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Gameplay/StaticData/StaticDataService.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Meta/HomeScreenFeature.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Meta/UI/Shop/ShopItemFactory.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Infrastructure/Installers/BootstrapInstaller.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Infrastructure/States/GameStates/HomeScreenState.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Meta/UI/Shop/Service/ShopUIService.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Meta/UI/GoldHolder/Systems/RefreshGoldGainBoostSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Gameplay/Common/CommonComponets.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Meta/UI/Shop/UIFactory/ShopUIFactory.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Meta/HomeUIFeature.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Meta/UI/Shop/ShopWindow.cs" />
       </list>
     </option>
   </component>
@@ -430,6 +442,8 @@
       <workItem from="1771413532847" duration="3355000" />
       <workItem from="1771416947001" duration="15000" />
       <workItem from="1771505063753" duration="4791000" />
+      <workItem from="1772028284592" duration="3204000" />
+      <workItem from="1772541713371" duration="6576000" />
     </task>
     <servers />
   </component>
@@ -471,22 +485,22 @@
       <screen x="0" y="0" width="1536" height="816" />
     </state>
     <state x="537" y="238" key="#com.intellij.tools.ToolEditorDialog/0.0.1536.816@0.0.1536.816" timestamp="1764184960813" />
-    <state width="1493" height="125" key="GridCell.Tab.0.bottom" timestamp="1771340814550">
+    <state width="1493" height="125" key="GridCell.Tab.0.bottom" timestamp="1772548430413">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1493" height="125" key="GridCell.Tab.0.bottom/0.0.1536.816@0.0.1536.816" timestamp="1771340814550" />
-    <state width="1493" height="125" key="GridCell.Tab.0.center" timestamp="1771340814550">
+    <state width="1493" height="125" key="GridCell.Tab.0.bottom/0.0.1536.816@0.0.1536.816" timestamp="1772548430413" />
+    <state width="1493" height="125" key="GridCell.Tab.0.center" timestamp="1772548430413">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1493" height="125" key="GridCell.Tab.0.center/0.0.1536.816@0.0.1536.816" timestamp="1771340814550" />
-    <state width="1493" height="125" key="GridCell.Tab.0.left" timestamp="1771340814550">
+    <state width="1493" height="125" key="GridCell.Tab.0.center/0.0.1536.816@0.0.1536.816" timestamp="1772548430413" />
+    <state width="1493" height="125" key="GridCell.Tab.0.left" timestamp="1772548430413">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1493" height="125" key="GridCell.Tab.0.left/0.0.1536.816@0.0.1536.816" timestamp="1771340814550" />
-    <state width="1493" height="125" key="GridCell.Tab.0.right" timestamp="1771340814550">
+    <state width="1493" height="125" key="GridCell.Tab.0.left/0.0.1536.816@0.0.1536.816" timestamp="1772548430413" />
+    <state width="1493" height="125" key="GridCell.Tab.0.right" timestamp="1772548430413">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1493" height="125" key="GridCell.Tab.0.right/0.0.1536.816@0.0.1536.816" timestamp="1771340814550" />
+    <state width="1493" height="125" key="GridCell.Tab.0.right/0.0.1536.816@0.0.1536.816" timestamp="1772548430413" />
     <state x="601" y="110" key="RiderGenerateDialog" timestamp="1765292662853">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
