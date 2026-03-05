@@ -16,6 +16,7 @@ using Code.Gameplay.Features.Loot;
 using Code.Gameplay.Features.Movement;
 using Code.Gameplay.Features.Statuses;
 using Code.Gameplay.Features.TargetCollection;
+using Code.Gameplay.GameOver.System;
 using Code.Gameplay.Input;
 using Code.Gameplay.Input.Service;
 using Code.Infrastructure.Systems;
@@ -51,7 +52,7 @@ namespace Code.Gameplay
             Add(systems.Create<StatusFeature>());
             Add(systems.Create<StatsFeature>());
       
-            //Add(systems.Create<GameOverOnHeroDeathSystem>());
+            Add(systems.Create<GameOverOnHeroDeathSystem>());
       
             Add(systems.Create<ProcessDestructedFeature>());
         }

@@ -1,0 +1,32 @@
+using System.Collections.Generic;
+using Code.Infrastructure.States.GameStates;
+using Code.Infrastructure.States.StateMachine;
+using Entitas;
+using NotImplementedException = System.NotImplementedException;
+
+namespace Code.Gameplay.GameOver.System
+{
+    public class GameOverOnHeroDeathSystem : ReactiveSystem<GameEntity>
+    {
+        private readonly IGameStateMachine _stateMachine;
+        
+        public GameOverOnHeroDeathSystem(GameContext game, IGameStateMachine stateMachine) : base(game)
+        {
+            _stateMachine = stateMachine;
+        }
+        
+        protected override ICollector<GameEntity> GetTrigger(IContext<GameEntity> context) =>
+            context.CreateCollector(GameMatcher
+                .AllOf(
+                    GameMatcher.Hero,
+                    GameMatcher.Dead)
+                .Added());
+        
+        protected override bool Filter(GameEntity hero) => hero.isDead;
+
+        protected override void Execute(List<GameEntity> heroes)
+        {
+            _stateMachine.Enter<GameOverState>();
+        }
+    }
+}

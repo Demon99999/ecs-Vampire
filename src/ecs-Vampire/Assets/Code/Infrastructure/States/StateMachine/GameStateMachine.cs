@@ -65,8 +65,7 @@ namespace Code.Infrastructure.States.StateMachine
       
       return ChangeState<TState>();
     }
-
-
+    
     private IPromise<TState> ChangeState<TState>() where TState : class, IExitableState
     {
       TState state = _stateFactory.GetState<TState>();

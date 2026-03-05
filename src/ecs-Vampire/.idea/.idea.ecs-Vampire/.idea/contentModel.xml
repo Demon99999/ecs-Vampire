@@ -366,6 +366,14 @@
                 <e p="TargetCollectionEntityExtensions.cs" t="Include" />
               </e>
             </e>
+            <e p="GameOver" t="Include">
+              <e p="System" t="Include">
+                <e p="GameOverOnHeroDeathSystem.cs" t="Include" />
+              </e>
+              <e p="UI" t="Include">
+                <e p="GameOverWindow.cs" t="Include" />
+              </e>
+            </e>
             <e p="Input" t="Include">
               <e p="InputComponent.cs" t="Include" />
               <e p="InputFeature.cs" t="Include" />
@@ -564,6 +572,7 @@
               <e p="ISceneLoader.cs" t="Include" />
               <e p="SceneLoader.cs" t="Include" />
               <e p="Scenes.cs" t="Include" />
+              <e p="SwitchToEntrySceneInEditor.cs" t="Include" />
             </e>
             <e p="Serialization" t="Include">
               <e p="Dummy.cs" t="Include" />
@@ -579,6 +588,7 @@
                 <e p="BattleEnterState.cs" t="Include" />
                 <e p="BattleLoopState.cs" t="Include" />
                 <e p="BootstrapState.cs" t="Include" />
+                <e p="GameOverState.cs" t="Include" />
                 <e p="HomeScreenState.cs" t="Include" />
                 <e p="LoadingBattleState.cs" t="Include" />
                 <e p="LoadingHomeScreenState.cs" t="Include" />
